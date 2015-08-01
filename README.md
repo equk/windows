@@ -14,3 +14,5 @@ Should include cmd files, config files, reg files and powershell scripts.
         clean_metro.ps1 - powershell script for cleaning metro apps
 
 Some of these scripts are now documented on my website on the [Windows 8.1 Tweaks](https://equk.co.uk/windows-8-1-tweaks/) page
+
+01-08-2015 - I have tested clean_metro.ps1 on windows 10 & it removes a lot of the bloat successfully.

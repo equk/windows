@@ -16,6 +16,8 @@ wusa /uninstall /KB:2919355 /quiet /norestart
 wusa /uninstall /KB:3065987 /quiet /norestart
 wusa /uninstall /KB:3075851 /quiet /norestart
 wusa /uninstall /KB:2977759 /quiet /norestart
+wusa /uninstall /KB:3075249 /quiet /norestart
+wusa /uninstall /KB:3080149 /quiet /norestart
 ECHO All Updates Removed
 PAUSE
 EXIT

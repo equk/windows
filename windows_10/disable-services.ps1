@@ -15,3 +15,12 @@
     Script posted on github:
     https://github.com/equk
 #>
+
+$services = @(
+    # Services Considered To Have Spying Capabilities
+    "DcpSvc"                                   # Data Collection and Publishing Service
+)
+
+foreach ($service in $services) {
+    Get-Service -Name $service | Stop-Service -Force | Set-Service -StartupType Disabled
+}

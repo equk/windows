@@ -19,6 +19,31 @@
 $services = @(
     # Services Considered To Have Spying Capabilities
     "DcpSvc"                                   # Data Collection and Publishing Service
+    "diagnosticshub.standardcollector.service" # Microsoft (R) Diagnostics Hub Standard Collector Service
+    "DiagTrack"                                # Diagnostics Tracking Service
+    "SensrSvc"                                 # Monitors Various Sensors
+    "dmwappushservice"                         # WAP Push Message Routing Service
+    "lfsvc"                                    # Geolocation Service
+    "MapsBroker"                               # Downloaded Maps Manager
+    "NetTcpPortSharing"                        # Net.Tcp Port Sharing Service
+    "RemoteAccess"                             # Routing and Remote Access
+    "RemoteRegistry"                           # Remote Registry
+    "SharedAccess"                             # Internet Connection Sharing (ICS)
+    "TrkWks"                                   # Distributed Link Tracking Client
+    "WbioSrvc"                                 # Windows Biometric Service
+    "WMPNetworkSvc"                            # Windows Media Player Network Sharing Service
+    "WSearch"                                  # Windows Search
+    # Gaming Based Services
+    "XblAuthManager"                           # Xbox Live Auth Manager
+    "XblGameSave"                              # Xbox Live Game Save Service
+    "XboxNetApiSvc"                            # Xbox Live Networking Service
+    # Windows HomeGroup Services
+    "HomeGroupListener"                        # HomeGroup Listener
+    "HomeGroupProvider"                        # HomeGroup Provider
+    # Other Optional
+    "bthserv"                                  # Bluetooth Support Service
+    #"wscsvc"                                  # Security Center Service
+    #"WlanSvc"                                 # WLAN AutoConfig
 )
 
 foreach ($service in $services) {

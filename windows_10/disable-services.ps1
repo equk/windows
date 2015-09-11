@@ -1,3 +1,5 @@
+#requires -version 4.0
+#requires -runasadministrator
 <#
 .SYNOPSIS
     Script to Disable Specific Services in Windows
@@ -9,7 +11,7 @@
 .NOTES
     File Name      : disable-services.ps1
     Author         : @equilibriumuk
-    Prerequisite   : PowerShell V2
+    Prerequisite   : PowerShell V4
     Copyright 2015 - B.Walden
 .LINK
     Script posted on github:

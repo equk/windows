@@ -19,15 +19,15 @@
 #>
 
 $tasks = @(
-    "SmartScreenSpecific",
-    "Microsoft Compatibility Appraiser",
-    "ProgramDataUpdater",
-    "Proxy",
-    "Consolidator",
-    "KernelCeipTask",
-    "UsbCeip",
-    "Microsoft-Windows-DiskDiagnosticDataCollector",
-    "Microsoft-Windows-DiskDiagnosticResolver",
+    "SmartScreenSpecific"
+    "Microsoft Compatibility Appraiser"
+    "ProgramDataUpdater"
+    "Proxy"
+    "Consolidator"
+    "KernelCeipTask"
+    "UsbCeip"
+    "Microsoft-Windows-DiskDiagnosticDataCollector"
+    "Microsoft-Windows-DiskDiagnosticResolver"
     "Sqm-Tasks"
 )
 

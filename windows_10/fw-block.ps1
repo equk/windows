@@ -18,7 +18,6 @@
     File Name      : fw-block.ps1
     Author         : @equilibriumuk
     Prerequisite   : PowerShell V4
-    Copyright 2015 - B.Walden
 .LINK
     Script posted on github:
     https://github.com/equk

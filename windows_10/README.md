@@ -23,6 +23,26 @@ or security risks due to the information they collect.
 
 Disables some data collecting scheduled tasks built-in to windows 10.
 
+
+      Disabling Scheduled Tasks
+
+
+    TaskPath                                       TaskName                          State
+    --------                                       --------                          -----
+    \Microsoft\Windows\AppID\                      SmartScreenSpecific               Disabled
+    \Microsoft\Windows\Application Experience\     Microsoft Compatibility Appraiser Disabled
+    \Microsoft\Windows\Application Experience\     ProgramDataUpdater                Disabled
+    \Microsoft\Windows\Autochk\                    Proxy                             Disabled
+    \Microsoft\Windows\Customer Experience Impr... Consolidator                      Disabled
+    \Microsoft\Windows\Customer Experience Impr... KernelCeipTask                    Disabled
+    \Microsoft\Windows\Customer Experience Impr... UsbCeip                           Disabled
+    \Microsoft\Windows\DiskDiagnostic\             Microsoft-Windows-DiskDiagnost... Disabled
+    \Microsoft\Windows\DiskDiagnostic\             Microsoft-Windows-DiskDiagnost... Disabled
+    \Microsoft\Windows\PI\                         Sqm-Tasks                         Disabled
+
+      All Tasks Successfully Disabled
+
+
 ###set-windowsupdate
 
 Sets Windows Update to Notify Before Downloading Available Updates.

@@ -17,7 +17,15 @@ This is a small collection of scripts for Tweaking / Fixing Windows 10
 Disables a lot of built-in Windows Services which could be considered privacy 
 or security risks due to the information they collect.
 
-***examples:** geolocation, sensors, remote access, remote registry, biomatrics, file & email content indexing*
+Examples:
+
+    Data Collection and Publishing Service
+    Microsoft (R) Diagnostics Hub Standard Collector Service
+    Diagnostics Tracking Service
+    Geolocation Service
+    Remote Registry
+    Windows Biometric Service
+    Windows Media Player Network Sharing Service
 
 ###disable-tasks
 

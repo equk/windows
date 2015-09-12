@@ -1,5 +1,6 @@
 #requires -version 4.0
 #requires -runasadministrator
+
 <#
 .SYNOPSIS
     Script to Block IP Addresses From A Blocklist In Windows Firewall

@@ -1,5 +1,6 @@
 #requires -version 4.0
 #requires -runasadministrator
+
 <#
 .SYNOPSIS
     Script to Set Options for Windows Update
@@ -21,6 +22,7 @@
     Script posted on github:
     https://github.com/equk
 #>
+
 # WindowsUpdate Settings
 Write-Host ">> Setting Windows Update to Notify Before Downloading Available Updates"
 mkdir -Force "HKLM:\SOFTWARE\Wow6432Node\Policies\Microsoft\Windows\WindowsUpdate\AU"

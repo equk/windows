@@ -1,5 +1,6 @@
 #requires -version 4.0
 #requires -runasadministrator
+
 <#
 .SYNOPSIS
     Script to Remove Default Windows AppStore Apps
@@ -24,6 +25,7 @@
     Script posted on github:
     https://github.com/equk
 #>
+
 Write-Host "Removing All Market Apps"
 Get-AppXProvisionedPackage -online | Remove-AppxProvisionedPackage -online
 Get-AppxPackage -AllUsers | Remove-AppxPackage

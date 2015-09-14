@@ -12,6 +12,11 @@ This is a small collection of scripts for Tweaking / Fixing Windows 10
 
 ##Specific Information
 
+Disable Telemetry In Powershell:
+
+    mkdir -Force "HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection"
+    sp "HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection" "AllowTelemetry" 0
+
 ###disable-services
 
 Disables a lot of built-in Windows Services which could be considered privacy 

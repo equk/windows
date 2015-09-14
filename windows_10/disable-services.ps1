@@ -49,5 +49,6 @@ $services = @(
 )
 
 foreach ($service in $services) {
-    Get-Service -Name $service | Stop-Service -Force | Set-Service -StartupType Disabled
+    Get-Service -Name $service | Stop-Service -Force
+    Get-Service -Name $service | Set-Service -StartupType Disabled
 }

@@ -14,6 +14,8 @@
 .PARAMETER BlockList
     Input a Blocklist of IP addresses you would like to block in Windows Firewall
     You can also remove a firewall rule based on a Blocklist
+.PARAMETER BlockGroup
+    Set a custom name for the Blocklist Rules Group
 .NOTES
     File Name      : fw-blocklist.ps1
     Author         : @equilibriumuk
@@ -25,23 +27,30 @@
 
 [CmdletBinding()]
 param(
-    [Parameter(Mandatory=$true,Position=1)]
+    [Parameter(Mandatory=$True,Position=1)]
     [ValidateSet("Add","Remove")]
     [string] $Action,
     [Parameter(Mandatory=$True)]
-    [string] $BlockList)
+    [string] $BlockList,
+    [Parameter(Mandatory=$False)]
+    [string] $BlockGroup
+    )
 
 $IpAddList = Get-Content (Join-Path $PSScriptRoot $BlockList)
 
+if (!$BlockGroup) {
+    $BlockGroup = "CLI Added IP BlockList"
+}
+
 switch ($Action) {
     "Add" {
-        Write-Verbose "Adding blocklist of IP addresses in firewall"
+        Write-Host "Adding blocklist of IP addresses in firewall"
         foreach ($IpAddress in $IpAddList) {
-            New-NetFirewallRule -DisplayName "BlockList $IpAddress" -Group "CLI Added IP BlockList" -Action block -Direction out -Profile Any -Protocol Any -RemoteAddress $IpAddress
+            New-NetFirewallRule -DisplayName "BlockList $IpAddress" -Group $BlockGroup -Action block -Direction out -Profile Any -Protocol Any -RemoteAddress $IpAddress
         }
     }
     "Remove" {
-        Write-Verbose "Removing IP addresses in firewall based on blocklist provided"
+        Write-Host "Removing IP addresses in firewall based on blocklist provided"
         foreach ($IpAddress in $IpAddList) {
             Remove-NetFirewallRule -DisplayName "BlockList $IpAddress"
         }

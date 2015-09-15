@@ -29,8 +29,9 @@ param(
     [Parameter(Mandatory=$true,Position=1)]
     [ValidateSet("Add","Remove")]
     [string] $Action,
-    [Parameter(Mandatory=$True)]
-    [string] $IpAddress)
+    [Parameter(Mandatory=$True,Position=2)]
+    [string] $IpAddress
+    )
 
 switch ($Action) {
     "Add" {

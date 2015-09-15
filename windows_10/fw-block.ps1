@@ -35,11 +35,11 @@ param(
 
 switch ($Action) {
     "Add" {
-        Write-Verbose "Adding block to IP addresses in firewall"
+        Write-Host "Adding block to IP addresses in firewall"
         New-NetFirewallRule -DisplayName "Block '$IpAddress'" -Group "CLI Added IP Block" -Action block -Direction out -Profile Any -Protocol Any -RemoteAddress $IpAddress
     }
     "Remove" {
-        Write-Verbose "Removing block to IP addresses in firewall"
+        Write-Host "Removing block to IP addresses in firewall"
         Remove-NetFirewallRule -DisplayName "Block '$IpAddress'"
     }
 }

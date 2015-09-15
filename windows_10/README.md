@@ -63,6 +63,12 @@ Sets Windows Update to Notify Before Downloading Available Updates.
 
 The default settings for Windows 10 is to automatically download & install updates.
 
+###fw-blocklist
+
+Block a list of IP Addresses in Windows Firewall
+
+more info: [https://equk.co.uk/2015/09/15/extend-win-fw-powershell/](https://equk.co.uk/2015/09/15/extend-win-fw-powershell/)
+
 ###remove-apps
 
 Cleans up all possible appstore applications from windows.

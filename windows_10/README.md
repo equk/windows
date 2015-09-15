@@ -16,6 +16,7 @@ Disable Telemetry In Powershell:
 
     mkdir -Force "HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection"
     sp "HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection" "AllowTelemetry" 0
+    sp "HKLM:\SOFTWARE\Wow6432Node\Policies\Microsoft\Windows\DataCollection" "AllowTelemetry" 0
 
 ###disable-services
 

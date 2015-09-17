@@ -18,6 +18,8 @@ Disable Telemetry In Powershell:
     sp "HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection" "AllowTelemetry" 0
     sp "HKLM:\SOFTWARE\Wow6432Node\Policies\Microsoft\Windows\DataCollection" "AllowTelemetry" 0
 
+Note: Cleanup folder contains scripts which could cause problems with Windows Components as it removes unwanted applications / components.
+
 ###disable-services
 
 Disables a lot of built-in Windows Services which could be considered privacy 

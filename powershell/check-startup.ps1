@@ -11,7 +11,7 @@
     Requires Admin Access
     Twitter: @equilibriumuk 
 .NOTES
-    File Name      : misc-tweaks.ps1
+    File Name      : check-startup.ps1
     Author         : @equilibriumuk
     Prerequisite   : PowerShell V4
 .LINK

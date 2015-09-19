@@ -65,6 +65,21 @@ Sets Windows Update to Notify Before Downloading Available Updates.
 
 The default settings for Windows 10 is to automatically download & install updates.
 
+###hosts-blocklist
+
+Block Hostnames From A Blocklist Using HOSTS file in windows
+
+example to show how it works:
+
+    > ping watson.live.com
+    Pinging watson.live.com [207.46.223.94] with 32 bytes of data:
+    > .\hosts-blocklist.ps1 .\telemetry_hosts.txt
+    > ping watson.live.com
+    Ping request could not find host watson.live.com. Please check the name and try again.
+
+I've found a lot of hosts files regarding telemetry and have added one to this repo to make it easier but if you have any additions, please comment.
+Also a lot of the hosts lists I found blocked skype & other applications.
+
 ###fw-blocklist
 
 Block a list of IP Addresses in Windows Firewall

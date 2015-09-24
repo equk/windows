@@ -23,8 +23,8 @@ Write-Host ">> Enabling Old Style Volume Mixer"
 If (-Not (Test-Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\MTCUVC"))
 {
     New-Item -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion" -Name MTCUVC
-    New-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\MTCUVC" -Name EnableMtcUvc -Type DWord -Value 0
 }
+sp "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\MTCUVC" "EnableMtcUvc" 0
 
 # Set Windows Explorer Default view to This PC
 
@@ -42,8 +42,8 @@ Write-Host ">> Disabling Tablet Lockscreen"
 If (-Not (Test-Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\Personalization"))
 {
     New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows" -Name "Personalization"
-    sp "HKLM:\SOFTWARE\Policies\Microsoft\Windows\Personalization" "NoLockScreen" 1
 }
+sp "HKLM:\SOFTWARE\Policies\Microsoft\Windows\Personalization" "NoLockScreen" 1
 
 # Set Windows Time to UTC (fixes issues with ntp)
 

@@ -9,7 +9,7 @@
     Requires Admin Access
     Twitter: @equilibriumuk 
 .NOTES
-    File Name      : misc-tweaks.ps1
+    File Name      : disable-telemetry.ps1
     Author         : @equilibriumuk
     Prerequisite   : PowerShell V4
 .LINK
@@ -46,3 +46,6 @@ If (-Not (Test-Path "HKLM:\SOFTWARE\Policies\Microsoft\SQMClient\Windows"))
     New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\SQMClient" -Name Windows
 }
 sp "HKLM:\SOFTWARE\Policies\Microsoft\SQMClient\Windows" "CEIPEnable" 0
+Write-Host ">> SOFTWARE Policies Applied"
+Write-Host "++ Make sure you run disable-services.ps1 & disable-tasks.ps1"
+Write-Host "++ to disable all telemetry & ceip related services & tasks"

@@ -12,13 +12,31 @@ This is a small collection of scripts for Tweaking / Fixing Windows 10
 
 ##Specific Information
 
-Disable Telemetry In Powershell:
+Note: Cleanup folder contains scripts which could cause problems with Windows Components as it removes unwanted applications / components.
 
-    mkdir -Force "HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection"
+###disable-telemetry
+
+Disable Telemetry & Related Items in Windows 10 Using Software Policies
+
+    >> Disabling Telemetry in SOFTWARE Policies
+    >> Disabling Problem Steps Recorder in SOFTWARE Policies
+    >> Disabling Application Impact Telemetry in SOFTWARE Policies
+    >> Disabling Customer Experience Improvement Program in SOFTWARE Policies
+
+**Problem Steps Recorder:**
+
+Problem Steps Recorder automatically captures the steps you take on a computer, including a text description of where you clicked and a screenshot during each click. Once you capture these steps, you can save them to a file that can be used by a support professional or someone else helping you with a computer problem.
+
+Note: some people/companies may want to keep Problem Steps Recorder enabled.
+
+If you only want to disable telemetry:
+
+    If (-Not (Test-Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection"))
+    {
+        New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows" -Name DataCollection
+    }
     sp "HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection" "AllowTelemetry" 0
     sp "HKLM:\SOFTWARE\Wow6432Node\Policies\Microsoft\Windows\DataCollection" "AllowTelemetry" 0
-
-Note: Cleanup folder contains scripts which could cause problems with Windows Components as it removes unwanted applications / components.
 
 ###disable-services
 

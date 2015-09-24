@@ -4,9 +4,11 @@ This is a small collection of scripts for Tweaking / Fixing Windows 10
 
     disable-services.ps1
     disable-tasks.ps1
+    disable-telemetry.ps1
     fw-blocklist.ps1
     fw-block.ps1
-    README.md
+    hosts-blocklist.ps1
+    misc-tweaks.ps1
     remove-apps.ps1
     set-windowsupdate.ps1
 

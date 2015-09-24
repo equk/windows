@@ -23,6 +23,10 @@ Disable Telemetry & Related Items in Windows 10 Using Software Policies
     >> Disabling Application Impact Telemetry in SOFTWARE Policies
     >> Disabling Customer Experience Improvement Program in SOFTWARE Policies
 
+**Microsoft Customer Experience Improvement Program**
+
+CEIP collects information about how our customers use Microsoft programs and about some of the problems they encounter. Microsoft uses this information to improve the products and features customers use most often and to help solve problems. Participation in the program is voluntary, and the end results are software improvements to better meet the needs of our customers.
+
 **Problem Steps Recorder:**
 
 Problem Steps Recorder automatically captures the steps you take on a computer, including a text description of where you clicked and a screenshot during each click. Once you capture these steps, you can save them to a file that can be used by a support professional or someone else helping you with a computer problem.

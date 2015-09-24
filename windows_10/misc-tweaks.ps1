@@ -33,7 +33,7 @@ sp "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "LaunchTo
 
 # Disable Hiding of Known File Extensions
 
-Write-Host ">> Disable Hiding of Known File Extensions"
+Write-Host ">> Disabling Hiding of Known File Extensions"
 sp "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "HideFileExt" 0
 
 # Disable Tablet Lockscreen
@@ -44,6 +44,15 @@ If (-Not (Test-Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\Personalization")
     New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows" -Name "Personalization"
 }
 sp "HKLM:\SOFTWARE\Policies\Microsoft\Windows\Personalization" "NoLockScreen" 1
+
+# Disable Background On Logon Screen (Uses Accent Color set in Personalization instead)
+
+Write-Host ">> Disabling Background On Logon / Lock Screen"
+If (-Not (Test-Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\System"))
+{
+    New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows" -Name "System"
+}
+sp "HKLM:\SOFTWARE\Policies\Microsoft\Windows\System" "DisableLogonBackgroundImage" 1
 
 # Set Windows Time to UTC (fixes issues with ntp)
 

@@ -10,7 +10,7 @@ Lots of scripts to tweak Microsoft Windows 10
 
 Scripts feature ability to disable various Microsoft technologies / services which can be considered to spy or report on users of the Operating System. eg: Telemetry, Problem Steps Recorder, Application Impact Telemetry, Customer Experience Improvement Program, Geolocation, Biometric Information, Browser History ...
 
-Also 'cleanup' folder features scripts to remove Microsoft OneDrive & move components relating to indexing or information within files (Cortana), reporting & information gathering.
+Also 'cleanup' folder features scripts to remove Microsoft OneDrive & move components relating to indexing of information within files (Cortana), reporting & information gathering.
 
 Some other Useful scripts in the windows 10 folder: 
 
@@ -20,7 +20,7 @@ Some other Useful scripts in the windows 10 folder:
 
 ##powershell
 
-This folder has a few basic scripts, the most useful is **check-startup** which checks registry locations known to be used by malware & viruses to use to initiate on windows startup.
+This folder has a few basic scripts, the most useful is **check-startup** which checks registry locations known to be used by malware & viruses to initiate on windows startup.
 
 ##tweaks
 

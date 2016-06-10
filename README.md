@@ -18,6 +18,12 @@ Some other Useful scripts in the windows 10 folder:
     hosts-blocklist     HOSTS script to block hosts from blocklists.
     misc-tweaks         Tweak appearance of lockscreen & various other personal usability tweaks
 
+**Microsoft References**
+
+[Configure Windows telemetry in your organization](https://technet.microsoft.com/en-us/itpro/windows/manage/configure-windows-telemetry-in-your-organization)
+
+[Manage connections from Windows operating system components to Microsoft services](https://technet.microsoft.com/en-us/itpro/windows/manage/manage-connections-from-windows-operating-system-components-to-microsoft-services#bkmk-priv-feedback)
+
 ##powershell
 
 This folder has a few basic scripts, the most useful is **check-startup** which checks registry locations known to be used by malware & viruses to initiate on windows startup.

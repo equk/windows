@@ -125,7 +125,25 @@ Some apps however cannot be removed using this script as they are considered sys
                     Microsoft.XboxIdentityProvider
                     Windows.ContactSupport
 
-I am still adding new scripts and updates to this repo as I have not yet deployed 
-Windows 10 as I am still testing in VMs.
+##cleanup/
+
+###rem-onedrive
+
+Removes onedrive by running uninstaller in background & reloading explorer
+
+###rem-sysapps
+
+Moves system apps related to telemetry/error reporting & also moves cortana to stop SearchUI.exe from spawning (useful if you do not use or need cortana)
+
+Make sure you hide cortana on system/start bar BEFORE running rem-sysapps
+
+<details>
+  <summary>Known Bugs / Issues</summary>
+Running rem-sysapps with cortana shown on taskbar can cause error when trying to move folders as process respawns too quickly
+
+ERROR: mv : The process cannot access the file because it is being used by another process.
+
+Setting the Cortana searchbar to hidden before running script should fix
+</details>
 
 If you find the scripts useful or have any tweaks or improvements please contact me on github or on twitter @equilibriumuk

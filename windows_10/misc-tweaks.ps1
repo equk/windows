@@ -29,7 +29,7 @@ sp "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\MTCUVC" "EnableMtcUvc" 0
 # Set Windows Explorer Default view to This PC
 
 Write-Host ">> Setting Windows Explorer Default view to This PC"
-sp "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "LaunchTo" 0
+sp "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "LaunchTo" 1
 
 # Disable Hiding of Known File Extensions
 
@@ -37,6 +37,13 @@ Write-Host ">> Disabling Hiding of Known File Extensions"
 sp "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "HideFileExt" 0
 
 # Disable Tablet Lockscreen
+
+Write-Host ">> Disabling Tablet Lockscreen Anniversary"
+If (-Not (Test-Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI\SessionData"))
+{
+    New-Item -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI" -Name "SessionData"
+}
+sp "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI\SessionData" "AllowLockScreen" 0
 
 Write-Host ">> Disabling Tablet Lockscreen"
 If (-Not (Test-Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\Personalization"))

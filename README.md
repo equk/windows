@@ -12,7 +12,14 @@ Scripts feature ability to disable various Microsoft technologies / services whi
 
 Also 'cleanup' folder features scripts to remove Microsoft OneDrive & move components relating to indexing of information within files (Cortana), reporting & information gathering.
 
-Some other Useful scripts in the windows 10 folder: 
+    cleanup
+        rem-lockapp.ps1     removes ugly lockscreen
+        rem-onedrive.ps1    removes onedrive
+        rem-sysapps.ps1     removes cortana, feedback & support
+
+Info regarding lockapp can be found in info/lockapp.md
+
+Some other Useful scripts in the windows 10 folder:
 
     fw-blocklist        Windows Firewall Extension scripts - allows use of IP Blocklists
     hosts-blocklist     HOSTS script to block hosts from blocklists.

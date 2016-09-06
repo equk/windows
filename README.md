@@ -1,10 +1,10 @@
-#Windows
+# Windows
 
 This repo holds tweaks for Windows
 
 The main activity is in the windows_10 folder
 
-##Windows_10
+## Windows_10
 
 Lots of scripts to tweak Microsoft Windows 10
 
@@ -32,11 +32,11 @@ Some other Useful scripts in the windows 10 folder:
 [Manage connections from Windows operating system components to Microsoft services](https://technet.microsoft.com/en-us/itpro/windows/manage/manage-connections-from-windows-operating-system-components-to-microsoft-services#bkmk-priv-feedback)
 </details>
 
-##powershell
+## Powershell
 
 This folder has a few basic scripts, the most useful is **check-startup** which checks registry locations known to be used by malware & viruses to initiate on windows startup.
 
-##tweaks
+## Tweaks
 
 This folder has some old tweaks I made for Windows 7 which can still be used in Windows 8.1 / 10.
 

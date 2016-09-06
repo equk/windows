@@ -7,7 +7,9 @@
 .DESCRIPTION
     Misc Personal Tweaks for Windows 10
     Requires Admin Access
-    Twitter: @equilibriumuk 
+    Notes:  Xbox Overlay DVR is known to force vsync
+            is a general annoyance & is un-needed due to steam overlay
+    Twitter: @equilibriumuk
 .NOTES
     File Name      : misc-tweaks.ps1
     Author         : @equilibriumuk
@@ -65,3 +67,13 @@ sp "HKLM:\SOFTWARE\Policies\Microsoft\Windows\System" "DisableLogonBackgroundIma
 
 Write-Host ">> Setting Windows Time To UTC"
 sp "HKLM:\SYSTEM\CurrentControlSet\Control\TimeZoneInformation" "RealTimeIsUniversal" 1
+
+# Disable Windows 10 Xbox Overlay
+
+Write-Host ">> Disabling Xbox Overlay Capture"
+If (-Not (Test-Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\GameDVR"))
+{
+    New-Item -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion" -Name "GameDVR"
+}
+sp "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\GameDVR" "AppCaptureEnabled" 0
+sp "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\GameDVR" "GameDVR_Enabled" 0

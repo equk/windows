@@ -1,22 +1,28 @@
-#Windows_10
+# Windows_10
 
 This is a small collection of scripts for Tweaking / Fixing Windows 10
 
-    disable-services.ps1
-    disable-tasks.ps1
-    disable-telemetry.ps1
-    fw-blocklist.ps1
-    fw-block.ps1
-    hosts-blocklist.ps1
-    misc-tweaks.ps1
-    remove-apps.ps1
-    set-windowsupdate.ps1
+### General Run Order
 
-##Specific Information
+* enable_scripts.cmd
+* disable-tasks.ps1
+* disable-services.ps1
+* disable-cortana.ps1
+* disable-telemetry.ps1
+* hosts-blocklist.ps1 telemetry_hosts.txt
+* misc-tweaks.ps1
+* set-windowsupdate.ps1
+* cleanup/rem-onedrive.ps1
+* [ right click cortana bar and disable ]
+* [ reboot ]
+* cleanup/rem-sysapps.ps1
+* cleanup/rem-lockapp.ps1
+
+## Specific Information
 
 Note: Cleanup folder contains scripts which could cause problems with Windows Components as it removes unwanted applications / components.
 
-###disable-telemetry
+### disable-telemetry
 
 Disable Telemetry & Related Items in Windows 10 Using Software Policies
 
@@ -44,9 +50,9 @@ If you only want to disable telemetry:
     sp "HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection" "AllowTelemetry" 0
     sp "HKLM:\SOFTWARE\Wow6432Node\Policies\Microsoft\Windows\DataCollection" "AllowTelemetry" 0
 
-###disable-services
+### disable-services
 
-Disables a lot of built-in Windows Services which could be considered privacy 
+Disables a lot of built-in Windows Services which could be considered privacy
 or security risks due to the information they collect.
 
 Examples:
@@ -59,7 +65,7 @@ Examples:
     Windows Biometric Service
     Windows Media Player Network Sharing Service
 
-###disable-tasks
+### disable-tasks
 
 Disables some data collecting scheduled tasks built-in to windows 10.
 
@@ -83,13 +89,13 @@ Disables some data collecting scheduled tasks built-in to windows 10.
       All Tasks Successfully Disabled
 
 
-###set-windowsupdate
+### set-windowsupdate
 
 Sets Windows Update to Notify Before Downloading Available Updates.
 
 The default settings for Windows 10 is to automatically download & install updates.
 
-###hosts-blocklist
+### hosts-blocklist
 
 Block Hostnames From A Blocklist Using HOSTS file in windows
 
@@ -104,19 +110,19 @@ example to show how it works:
 I've found a lot of hosts files regarding telemetry and have added one to this repo to make it easier but if you have any additions, please comment.
 Also a lot of the hosts lists I found blocked skype & other applications.
 
-###fw-blocklist
+### fw-blocklist
 
 Block a list of IP Addresses in Windows Firewall
 
 more info: [https://equk.co.uk/2015/09/15/extend-win-fw-powershell/](https://equk.co.uk/2015/09/15/extend-win-fw-powershell/)
 
-###remove-apps
+### remove-apps
 
 Cleans up all possible appstore applications from windows.
 
 Some apps however cannot be removed using this script as they are considered system applications.
 
-    Non-Removable Applications : 
+    Non-Removable Applications :
                     Microsoft.BioEnrollment
                     Microsoft.MicrosoftEdge
                     Microsoft.Windows.Cortana
@@ -125,13 +131,13 @@ Some apps however cannot be removed using this script as they are considered sys
                     Microsoft.XboxIdentityProvider
                     Windows.ContactSupport
 
-##cleanup/
+## cleanup/
 
-###rem-onedrive
+### rem-onedrive
 
 Removes onedrive by running uninstaller in background & reloading explorer
 
-###rem-sysapps
+### rem-sysapps
 
 Moves system apps related to telemetry/error reporting & also moves cortana to stop SearchUI.exe from spawning (useful if you do not use or need cortana)
 

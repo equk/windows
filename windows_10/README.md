@@ -13,7 +13,6 @@ This is a small collection of scripts for Tweaking / Fixing Windows 10
 * misc-tweaks.ps1
 * set-windowsupdate.ps1
 * cleanup/rem-onedrive.ps1
-* [ right click cortana bar and disable ]
 * [ reboot ]
 * cleanup/rem-sysapps.ps1
 * cleanup/rem-lockapp.ps1

@@ -36,12 +36,7 @@ If (-Not (Test-Path "HKCU:\Software\Microsoft\InputPersonalization\TrainedDataSt
     New-Item -Path "HKCU:\Software\Microsoft\InputPersonalization\TrainedDataStore"
 }
 sp "HKCU:\Software\Microsoft\InputPersonalization\TrainedDataStore" "HarvestContacts" 0
-If (-Not (Test-Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection"))
-{
-    Write-Host ">> DataCollection Settings not found creating ..."
-    New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows" -Name DataCollection
-}
-sp "HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection" "AllowTelemetry" 0
-sp "HKLM:\SOFTWARE\Wow6432Node\Policies\Microsoft\Windows\DataCollection" "AllowTelemetry" 0
+Write-Host ">> Disabling Cortana on Taskbar"
+sp "HKCU:\Software\Microsoft\Windows\CurrentVersion\Search" "SearchboxTaskbarMode" 0
 Write-Host ">>>> Cortana SOFTWARE Policies Applied"
 Write-Host "++ Run cleanup/rem-sysapps.ps1 to remove cortana exe"

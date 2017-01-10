@@ -85,3 +85,11 @@ If (-Not (Test-Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\Cloud Content"))
     New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows" -Name "Cloud Content"
 }
 sp "HKLM:\SOFTWARE\Policies\Microsoft\Windows\Cloud Content" "DisableWindowsConsumerFeatures" 1
+
+# Disable Cortana Searchbar in System Tray
+Write-Host ">> Disabling Cortana Searchbar in System Tray"
+If (-Not (Test-Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Search"))
+{
+    New-Item -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion" -Name "Search"
+}
+sp "HKCU:\Software\Microsoft\Windows\CurrentVersion\Search" -Name "BingSearchEnabled" 0

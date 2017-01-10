@@ -77,3 +77,11 @@ If (-Not (Test-Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\GameDVR"))
 }
 sp "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\GameDVR" "AppCaptureEnabled" 0
 sp "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\GameDVR" "GameDVR_Enabled" 0
+
+# Disable Windows Consumer Features (Stop annoying game tiles appearing)
+Write-Host ">> Disabling Windows Consumer Features"
+If (-Not (Test-Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\Cloud Content"))
+{
+    New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows" -Name "Cloud Content"
+}
+sp "HKLM:\SOFTWARE\Policies\Microsoft\Windows\Cloud Content" "DisableWindowsConsumerFeatures" 1

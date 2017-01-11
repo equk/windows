@@ -11,7 +11,7 @@
     Note: Make sure Cortana is first in list if req'd as process respawns quickly
     Also if you get access denied, run the script twice
     Requires Admin Access
-    Twitter: @equilibriumuk 
+    Twitter: @equilibriumuk
 .NOTES
     File Name      : disable-services.ps1
     Author         : @equilibriumuk
@@ -33,7 +33,23 @@ Write-Host ">> Killing Cortana Process"
 Get-Process *SearchUI* | Stop-Process -Force
 Write-Host ">> Moving Folders"
 foreach ($sysapp in $sysapps) {
+    [int]$i = "1"
+    $dis = "_disabled"
+    $moveto = "$sysapppath\$sysapp$dis"
+    $movefrom = "$sysapppath\$sysapp"
     if (Test-Path $sysapppath\$sysapp) {
-        mv $sysapppath\$sysapp $sysapppath\$sysapp"_disabled"
+        if (Test-Path $moveto) {
+            do {
+                Write-Host ">> WARN: folder already exists"
+                Write-Host ">> moving app $sysapp to $moveto$i"
+                mv $sysapppath\$sysapp $moveto$i -EA SilentlyContinue
+                $i++
+                }
+            until (!(Test-Path $sysapppath\$sysapp))
+        }
+        else {
+            mv $sysapppath\$sysapp $moveto
+            Write-Host ">> moving app $sysapp to $moveto"
+        }
     }
 }

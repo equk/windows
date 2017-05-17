@@ -6,6 +6,8 @@ The screenshots in this folder are from a clean install of windows using the cus
 
 The start menu is pretty clean as there are no annoying store apps or links.
 
+![](https://raw.githubusercontent.com/equk/windows/master/windows_10/1703/start_menu.png)
+
 ## Notes:
 
 Windows Smartscreen settings have now moved to Windows Security Center options.

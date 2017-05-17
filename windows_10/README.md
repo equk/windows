@@ -21,6 +21,12 @@ This is a small collection of scripts for Tweaking / Fixing Windows 10
 
 Note: Cleanup folder contains scripts which could cause problems with Windows Components as it removes unwanted applications / components.
 
+## Added 1703
+
+I have added a new folder for Windows 10 Creators Update as I have a custom ISO with Cortana, Windows Store & all Store Apps removed.
+
+Still testing this but it seems much better as there are no store shortcuts on start menu (eg: minecraft) & less background processes running.
+
 ### disable-telemetry
 
 Disable Telemetry & Related Items in Windows 10 Using Software Policies

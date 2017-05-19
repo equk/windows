@@ -8,7 +8,11 @@ The main activity is in the windows_10 folder
 
 Lots of scripts to tweak Microsoft Windows 10
 
-Last 5 Commits:
+### 1703 - Windows 10 Creators Edition
+
+I recently added some information regarding Windows 10 Creators Edition using a custom ISO with most annoying elements of windows removed.
+
+(removed: onedrive, cortana, game shortcuts, get office shortcuts, store, skype, mail, maps, people, feedback hub)
 
 - 11 Jan 2017 added loop to rem-sysapps to allow for removal of cortana after running windows update
 - 10 Jan 2017 added disable cortana searchbar in systray to misc-tweaks

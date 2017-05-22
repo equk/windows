@@ -1,7 +1,7 @@
 @echo off
 echo allowing users to run powershell scripts
 echo.
-echo for more information see: http://go.microsoft.com/fwlink/?LinkID-135170
+echo for more information see: about_Execution_Policies
 echo.
 pause
 echo setting execution policy

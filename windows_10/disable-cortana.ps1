@@ -28,7 +28,7 @@ sp "HKCU:\Software\Microsoft\Personalization\Settings" "AcceptedPrivacyPolicy" 0
 sp "HKCU:\Software\Microsoft\Windows\CurrentVersion\Search" "CortanaEnabled" 0
 If (-Not (Test-Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\Windows Search")) {
     Write-Host ">> Windows Search not found, creating ..."
-    New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\Windows Search"
+    New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\Windows Search" -Force
     Write-Host ">>"
 }
 sp "HKLM:\SOFTWARE\Policies\Microsoft\Windows\Windows Search" "AllowCortana" 0
@@ -48,7 +48,8 @@ sp "HKCU:\Software\Microsoft\InputPersonalization" "RestrictImplicitTextCollecti
 sp "HKCU:\Software\Microsoft\InputPersonalization" "RestrictImplicitInkCollection" 1
 If (-Not (Test-Path "HKCU:\Software\Microsoft\InputPersonalization\TrainedDataStore")) {
     Write-Host ">> Personalization TrainedDataStore not found, creating ..."
-    New-Item -Path "HKCU:\Software\Microsoft\InputPersonalization\TrainedDataStore"
+    New-Item -Path "HKCU:\Software\Microsoft\InputPersonalization\TrainedDataStore" -Force
+    Write-Host ">>"
 }
 sp "HKCU:\Software\Microsoft\InputPersonalization\TrainedDataStore" "HarvestContacts" 0
 Write-Host ">> Disabling Cortana on Taskbar"

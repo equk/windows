@@ -6,7 +6,7 @@ echo.
 pause
 echo setting execution policy
 powershell "Set-ExecutionPolicy Unrestricted"
-echo unblocking scripts included in this folder & subfolders
+echo unblocking scripts included in these folders
 powershell "ls -Recurse *.ps1 | Unblock-File"
 powershell "ls -Recurse *.psm1 | Unblock-File"
 echo all scripts within this folder should now run without security prompt

@@ -8,7 +8,7 @@
     Script to Disable Specific Services in Windows
     Made With Privacy In Mind But Can Be Adapted / Tweaked Accordingly
     Requires Admin Access
-    Twitter: @equilibriumuk 
+    Twitter: @equilibriumuk
 .NOTES
     File Name      : disable-services.ps1
     Author         : @equilibriumuk
@@ -43,12 +43,15 @@ $services = @(
     "HomeGroupListener"                        # HomeGroup Listener
     "HomeGroupProvider"                        # HomeGroup Provider
     # Other Optional
-    "bthserv"                                  # Bluetooth Support Service
+    #"bthserv"                                 # Bluetooth Support Service
     #"wscsvc"                                  # Security Center Service
     #"WlanSvc"                                 # WLAN AutoConfig
 )
 
 foreach ($service in $services) {
-    Get-Service -Name $service | Stop-Service -Force
-    Get-Service -Name $service | Set-Service -StartupType Disabled
+    if ( Get-Service "$service*" -Include $service ) {
+        Write-Host " Disabling Service $service ..."
+        Get-Service -Name $service | Stop-Service -Force
+        Get-Service -Name $service | Set-Service -StartupType Disabled
+    }
 }

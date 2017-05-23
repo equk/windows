@@ -46,6 +46,18 @@ $services = @(
     #"bthserv"                                 # Bluetooth Support Service
     #"wscsvc"                                  # Security Center Service
     #"WlanSvc"                                 # WLAN AutoConfig
+    "OneSyncSvc"                               # Sync Host Service
+    "AeLookupSvc"                              # Application Experience Service
+    "PcaSvc"                                   # Program Compatibility Assistant
+    "WinHttpAutoProxySvc"                      # WinHTTP Web Proxy Auto-Discovery
+    "UPNPHOST"                                 # Universal Plug & Play Host
+    "ERSVC"                                    # Error Reporting Service
+    "WERSVC"                                   # Windows Error Reporting Service
+    "SSDPSRV"                                  # SSDP Discovery Service
+    "CDPSvc"                                   # Connected Devices Platform Service
+    "DsSvc"                                    # Data Sharing Service
+    "DcpSvc"                                   # Data Collection and Publishing Service
+    "lfsvc"                                    # Geolocation service
 )
 
 foreach ($service in $services) {

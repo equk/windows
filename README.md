@@ -8,17 +8,20 @@ The main activity is in the windows_10 folder
 
 Lots of scripts to tweak Microsoft Windows 10
 
-### 1703 - Windows 10 Creators Edition
+    1703 - Windows 10 Creators Edition
 
-I recently added some information regarding Windows 10 Creators Edition using a custom ISO with most annoying elements of windows removed.
+    I recently added some information regarding Windows 10 Creators Edition using a custom ISO with most annoying elements of windows removed.
 
-(removed: onedrive, cortana, game shortcuts, get office shortcuts, store, skype, mail, maps, people, feedback hub)
+    (removed: onedrive, cortana, game shortcuts, get office shortcuts, store, skype, mail, maps, people, feedback hub)
 
+- 23 May 2017 added new telemetry hosts to blocklist
+- 23 May 2017 added more registry keys to disable-cortana.ps1
+- 23 May 2017 added more windows services to disable list
+- 23 May 2017 added if statement to only disable known services in disable-services
+- 22 May 2017 updated enable_scripts.cmd to unblock powershell scripts in win10
+- 17 May 2017 added info re: windows creators update
 - 11 Jan 2017 added loop to rem-sysapps to allow for removal of cortana after running windows update
 - 10 Jan 2017 added disable cortana searchbar in systray to misc-tweaks
-- 10 Jan 2017 added remove-bloat script for anniversary update consumer experience :rage:
-- 10 Jan 2017 added remove windows consumer features to misc-tweaks
-- 9 Sep 2016 added SearchboxTaskbarMode to disable-cortana script
 
 Scripts feature ability to disable various Microsoft technologies / services which can be considered to spy or report on users of the Operating System. eg: Telemetry, Problem Steps Recorder, Application Impact Telemetry, Customer Experience Improvement Program, Geolocation, Biometric Information, Browser History ...
 

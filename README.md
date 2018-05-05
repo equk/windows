@@ -22,10 +22,9 @@ Microsoft also seem to have removed the GPO for disabling cortana in Software Po
 - 17 May 2017 added info re: windows creators update
 - 11 Jan 2017 added loop to rem-sysapps to allow for removal of cortana after running windows update
 - 10 Jan 2017 added disable cortana searchbar in systray to misc-tweaks
-- 15 May 2018 added script to remove Microsoft Edge
+- 05 May 2018 added script to remove Microsoft Edge
 
 <details><summary>1703 - Windows 10 Creators Edition</summary>
-    1703 - Windows 10 Creators Edition
 
     I recently added some information regarding Windows 10 Creators Edition using a custom ISO with most annoying elements of windows removed.
 

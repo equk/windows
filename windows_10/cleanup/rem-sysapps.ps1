@@ -31,6 +31,7 @@ $sysapps = @(
 
 Write-Host ">> Killing Cortana Process"
 Get-Process *SearchUI* | Stop-Process -Force
+Get-Process *RemindersServer* | Stop-Process -Force
 Write-Host ">> Moving Folders"
 foreach ($sysapp in $sysapps) {
     [int]$i = "1"

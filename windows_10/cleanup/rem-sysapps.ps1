@@ -13,7 +13,7 @@
     Requires Admin Access
     Twitter: @equilibriumuk
 .NOTES
-    File Name      : disable-services.ps1
+    File Name      : rem-sysapps.ps1
     Author         : @equilibriumuk
     Prerequisite   : PowerShell V4
 .LINK
@@ -27,12 +27,8 @@ $sysapps = @(
     "ContactSupport_cw5n1h2txyewy"
     "ParentalControls_cw5n1h2txyewy"
     "WindowsFeedback_cw5n1h2txyewy"
-    "Microsoft.MicrosoftEdge_8wekyb3d8bbwe"
     )
 
-Write-Host ">> Killing MS Edge Process"
-Get-Process *MicrosoftEdge* | Stop-Process -Force
-Get-Process *MicrosoftEdgeCP* | Stop-Process -Force
 Write-Host ">> Killing Cortana Process"
 Get-Process *SearchUI* | Stop-Process -Force
 Write-Host ">> Moving Folders"

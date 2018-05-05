@@ -8,11 +8,11 @@ The main activity is in the windows_10 folder
 
 Lots of scripts to tweak Microsoft Windows 10
 
-    1703 - Windows 10 Creators Edition
+1803: Scripts still relevant, added new script to remove Microsoft Edge browser as it now seems to run in the background for some reason.
 
-    I recently added some information regarding Windows 10 Creators Edition using a custom ISO with most annoying elements of windows removed.
+The remove cortana cleanup (searchui.exe) script errors as the process doesn't seem to close. (it's still possible to remove searchui.exe without breaking windows)
 
-    (removed: onedrive, cortana, game shortcuts, get office shortcuts, store, skype, mail, maps, people, feedback hub)
+Microsoft also seem to have removed the GPO for disabling cortana in Software Policies.
 
 - 23 May 2017 added new telemetry hosts to blocklist
 - 23 May 2017 added more registry keys to disable-cortana.ps1
@@ -22,6 +22,15 @@ Lots of scripts to tweak Microsoft Windows 10
 - 17 May 2017 added info re: windows creators update
 - 11 Jan 2017 added loop to rem-sysapps to allow for removal of cortana after running windows update
 - 10 Jan 2017 added disable cortana searchbar in systray to misc-tweaks
+- 15 May 2018 added script to remove Microsoft Edge
+
+<details><summary>1703 - Windows 10 Creators Edition</summary>
+    1703 - Windows 10 Creators Edition
+
+    I recently added some information regarding Windows 10 Creators Edition using a custom ISO with most annoying elements of windows removed.
+
+    (removed: onedrive, cortana, game shortcuts, get office shortcuts, store, skype, mail, maps, people, feedback hub)
+</details>
 
 Scripts feature ability to disable various Microsoft technologies / services which can be considered to spy or report on users of the Operating System. eg: Telemetry, Problem Steps Recorder, Application Impact Telemetry, Customer Experience Improvement Program, Geolocation, Biometric Information, Browser History ...
 

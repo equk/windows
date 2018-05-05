@@ -21,6 +21,14 @@ This is a small collection of scripts for Tweaking / Fixing Windows 10
 
 Note: Cleanup folder contains scripts which could cause problems with Windows Components as it removes unwanted applications / components.
 
+### Added 1803
+
+Added new script to remove Microsoft Edge browser as it now seems to run in the background for some reason.
+
+The remove cortana cleanup (searchui.exe) script sometimes errors as the process doesn't seem to close but works if you run multiple times.
+
+Microsoft also seem to have removed the GPO for disabling cortana in Software Policies.
+
 ### Added 1703
 
 I have added a new folder for Windows 10 Creators Update as I have a custom ISO with Cortana, Windows Store & all Store Apps removed.

@@ -8,9 +8,11 @@ The main activity is in the windows_10 folder
 
 Lots of scripts to tweak Microsoft Windows 10
 
-1803: Scripts still relevant, added new script to remove Microsoft Edge browser as it now seems to run in the background for some reason.
+### 1803
 
-The remove cortana cleanup (searchui.exe) script errors as the process doesn't seem to close. (it's still possible to remove searchui.exe without breaking windows)
+Scripts still relevant, added new script to remove Microsoft Edge browser as it now seems to run in the background for some reason.
+
+The remove cortana cleanup (searchui.exe) script sometimes errors as the process doesn't seem to close but works if you run multiple times.
 
 Microsoft also seem to have removed the GPO for disabling cortana in Software Policies.
 

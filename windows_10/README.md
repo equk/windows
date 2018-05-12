@@ -9,13 +9,15 @@ This is a small collection of scripts for Tweaking / Fixing Windows 10
 * disable-services.ps1
 * disable-cortana.ps1
 * disable-telemetry.ps1
+* remove-apps.ps1
 * hosts-blocklist.ps1 telemetry_hosts.txt
 * misc-tweaks.ps1
 * set-windowsupdate.ps1
 * cleanup/rem-onedrive.ps1
 * [ reboot ]
 * cleanup/rem-sysapps.ps1
-* cleanup/rem-lockapp.ps1
+* [ install google chrome ]
+* cleanup/rem-msedge.ps1
 
 ## Specific Information
 

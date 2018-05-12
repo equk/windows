@@ -93,3 +93,12 @@ If (-Not (Test-Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Search"))
     New-Item -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion" -Name "Search"
 }
 sp "HKCU:\Software\Microsoft\Windows\CurrentVersion\Search" -Name "BingSearchEnabled" 0
+
+# Disable Automatic Sample Submission in Windows Defender
+Write-Host ">> Disabling Automatic Sample Submission in Windows Defender"
+If (-Not (Test-Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\Spynet"))
+{
+    New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender" -Name "Spynet"
+}
+sp "HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\Spynet" -Name "SpynetReporting" 0
+sp "HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\Spynet" -Name "SubmitSamplesConsent" 2

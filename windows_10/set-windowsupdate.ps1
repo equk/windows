@@ -25,7 +25,10 @@
 
 # WindowsUpdate Settings
 Write-Host ">> Setting Windows Update to Notify Before Downloading Available Updates"
-mkdir -Force "HKLM:\SOFTWARE\Wow6432Node\Policies\Microsoft\Windows\WindowsUpdate\AU"
+If (-Not (Test-Path "HKLM:\SOFTWARE\Wow6432Node\Policies\Microsoft\Windows\WindowsUpdate\AU"))
+{
+    mkdir -Force "HKLM:\SOFTWARE\Wow6432Node\Policies\Microsoft\Windows\WindowsUpdate\AU"
+}
 sp "HKLM:\SOFTWARE\Wow6432Node\Policies\Microsoft\Windows\WindowsUpdate\AU" "NoAutoUpdate" 0
 sp "HKLM:\SOFTWARE\Wow6432Node\Policies\Microsoft\Windows\WindowsUpdate\AU" "AUOptions" 2
 sp "HKLM:\SOFTWARE\Wow6432Node\Policies\Microsoft\Windows\WindowsUpdate\AU" "ScheduledInstallDay" 0
@@ -33,7 +36,10 @@ sp "HKLM:\SOFTWARE\Wow6432Node\Policies\Microsoft\Windows\WindowsUpdate\AU" "Sch
 # DeliveryOptimization Settings
 # Reference: http://windows.microsoft.com/en-us/windows-10/windows-update-delivery-optimization-faq
 Write-Host ">> Disabling Microsoft DeliveryOptimization Using Group Policy Settings"
-mkdir -Force "HKLM:\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization"
+If (-Not (Test-Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization"))
+{
+    mkdir -Force "HKLM:\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization"
+}
 sp "HKLM:\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization" "DODownloadMode" 0
 # Done
 Write-Host ">> Finished Setting Windows Update Settings"

@@ -10,7 +10,7 @@
     I have left "Printing-PrintToPDFServices-Features"
     Twitter: @equilibriumuk
 .NOTES
-    File Name      : disable-services.ps1
+    File Name      : disable-optional.ps1
     Author         : @equilibriumuk
     Prerequisite   : PowerShell V4
 .LINK

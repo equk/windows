@@ -12,10 +12,15 @@ Lots of scripts to tweak Microsoft Windows 10
 
 Scripts still relevant, added new script to remove Microsoft Edge browser as it now seems to run in the background for some reason.
 
-The remove cortana cleanup (searchui.exe) script sometimes errors as the process doesn't seem to close but works if you run multiple times.
+The remove cortana cleanup script sometimes errors as the process doesn't seem to close but works if you run multiple times.
 
 Microsoft also seem to have removed the GPO for disabling cortana in Software Policies.
 
+- 13 May 2018 added script to remove unwanted optional features from windows 10
+- 13 May 2018 added a script for removing cortana searchui.exe (alternative to rem-sysapps)
+- 12 May 2018 added Disable Automatic Sample Submission W Defender to misc-tweaks
+- 12 May 2018 Added rem-people script to remove Microsoft People Experience
+- 05 May 2018 added script to remove Microsoft Edge
 - 23 May 2017 added new telemetry hosts to blocklist
 - 23 May 2017 added more registry keys to disable-cortana.ps1
 - 23 May 2017 added more windows services to disable list
@@ -24,14 +29,6 @@ Microsoft also seem to have removed the GPO for disabling cortana in Software Po
 - 17 May 2017 added info re: windows creators update
 - 11 Jan 2017 added loop to rem-sysapps to allow for removal of cortana after running windows update
 - 10 Jan 2017 added disable cortana searchbar in systray to misc-tweaks
-- 05 May 2018 added script to remove Microsoft Edge
-
-<details><summary>1703 - Windows 10 Creators Edition</summary>
-
-    I recently added some information regarding Windows 10 Creators Edition using a custom ISO with most annoying elements of windows removed.
-
-    (removed: onedrive, cortana, game shortcuts, get office shortcuts, store, skype, mail, maps, people, feedback hub)
-</details>
 
 Scripts feature ability to disable various Microsoft technologies / services which can be considered to spy or report on users of the Operating System. eg: Telemetry, Problem Steps Recorder, Application Impact Telemetry, Customer Experience Improvement Program, Geolocation, Biometric Information, Browser History ...
 
@@ -40,16 +37,7 @@ Cleanup folder features scripts to remove Microsoft OneDrive & move components r
 rem-sysapps should now remove cortana etc multiple times meaning you can re-run the script to remove cortana when windows update re-installs cortana (which it seems to do frequently).
 
 
-```
-cleanup
-    rem-lockapp.ps1     removes ugly lockscreen
-    rem-onedrive.ps1    removes onedrive
-    rem-sysapps.ps1     removes cortana, feedback & support
-```
-
-Info regarding lockapp can be found in info/lockapp.md
-
-Some other Useful scripts in the windows 10 folder:
+Some other useful scripts in the windows 10 folder:
 
 ```
 fw-blocklist        Windows Firewall Extension scripts - allows use of IP Blocklists

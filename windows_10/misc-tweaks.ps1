@@ -93,6 +93,7 @@ If (-Not (Test-Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Search"))
     New-Item -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion" -Name "Search"
 }
 sp "HKCU:\Software\Microsoft\Windows\CurrentVersion\Search" -Name "BingSearchEnabled" 0
+sp "HKCU:\Software\Microsoft\Windows\CurrentVersion\Search" -Name "SearchboxTaskbarMode" 0
 
 # Disable Automatic Sample Submission in Windows Defender
 Write-Host ">> Disabling Automatic Sample Submission in Windows Defender"

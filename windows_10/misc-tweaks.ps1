@@ -111,3 +111,11 @@ If (-Not (Test-Path "HKLM:\Software\Policies\Microsoft\Windows Defender\SmartScr
     New-Item -Path "HKLM:\Software\Policies\Microsoft\Windows Defender" -Name "SmartScreen"
 }
 sp "HKLM:\Software\Policies\Microsoft\Windows Defender\SmartScreen" -Name "ConfigureAppInstallControl" 0
+
+# Disable Windows SmartScreen in Windows Shell
+Write-Host ">> Disabling Windows SmartScreen in Windows Shell"
+If (-Not (Test-Path "HKLM:\Software\Policies\Microsoft\Windows\System"))
+{
+    New-Item -Path "HKLM:\Software\Policies\Microsoft\Windows" -Name "System"
+}
+sp "HKLM:\Software\Policies\Microsoft\Windows\System" -Name "EnableSmartScreen" 0

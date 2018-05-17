@@ -103,3 +103,11 @@ If (-Not (Test-Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\Spynet")
 }
 sp "HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\Spynet" -Name "SpynetReporting" 0
 sp "HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\Spynet" -Name "SubmitSamplesConsent" 2
+
+# Allow Install of Apps Outside of Windows Store
+Write-Host ">> Allowing Install of Apps Outside of Windows Store"
+If (-Not (Test-Path "HKLM:\Software\Policies\Microsoft\Windows Defender\SmartScreen"))
+{
+    New-Item -Path "HKLM:\Software\Policies\Microsoft\Windows Defender" -Name "SmartScreen"
+}
+sp "HKLM:\Software\Policies\Microsoft\Windows Defender\SmartScreen" -Name "ConfigureAppInstallControl" 0

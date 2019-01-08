@@ -27,7 +27,7 @@ Note: Cleanup folder contains scripts which could cause problems with Windows Co
 
 It seems the Microsoft Edge browser background process re-spawns the cortana searchui process if it gets killed.
 
-**It is possible to remove cortana after removing msedge** (run `cleanup/rem-msedge` before `cleanup/rem-sysapps`)
+*It is possible to remove cortana after removing msedge*
 
 ### Added 1803
 

@@ -8,7 +8,7 @@ The main activity is in the windows_10 folder
 
 Lots of scripts to tweak Microsoft Windows 10
 
-### 1803
+### 1803 / 1809
 
 Scripts still relevant, added new script to remove Microsoft Edge browser as it now seems to run in the background for some reason.
 

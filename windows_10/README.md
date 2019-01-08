@@ -15,13 +15,19 @@ This is a small collection of scripts for Tweaking / Fixing Windows 10
 * set-windowsupdate.ps1
 * cleanup/rem-onedrive.ps1
 * [ reboot ]
-* cleanup/rem-sysapps.ps1
-* [ install google chrome ]
+* [ install mozilla firefox ]
 * cleanup/rem-msedge.ps1
+* cleanup/rem-sysapps.ps1
 
 ## Specific Information
 
 Note: Cleanup folder contains scripts which could cause problems with Windows Components as it removes unwanted applications / components.
+
+### Notes 1809
+
+It seems the Microsoft Edge browser background process re-spawns the cortana searchui process if it gets killed.
+
+**It is possible to remove cortana after removing msedge** (run `cleanup/rem-msedge` before `cleanup/rem-sysapps`)
 
 ### Added 1803
 

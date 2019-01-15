@@ -16,6 +16,14 @@ The remove cortana cleanup script sometimes errors as the process doesn't seem t
 
 Microsoft also seem to have removed the GPO for disabling cortana in Software Policies.
 
+- 15 Jan 2019 updated README ref: set_power.cmd script
+- 15 Jan 2019 added set_power script to disable hibernate & standby options in windows
+- 15 Jan 2019 added registry key to disable microsoft remote assistance to misc-tweaks
+- 8 Jan 2019 added windows 10 1809 new install scheduled task & service lists
+- 3 Jan 2019 added installed applications list for new install of windows 10 1809
+- 17 May 2018 added policy to disable SmartScreen errors when running downloaded apps
+- 17 May 2018 added policy to allow install of apps from outside of windows store
+- 17 May 2018 added new registry key for disabling cortana search on taskbar to misc-tweaks
 - 13 May 2018 added script to remove unwanted optional features from windows 10
 - 13 May 2018 added a script for removing cortana searchui.exe (alternative to rem-sysapps)
 - 12 May 2018 added Disable Automatic Sample Submission W Defender to misc-tweaks

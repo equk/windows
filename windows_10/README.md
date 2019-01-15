@@ -18,6 +18,7 @@ This is a small collection of scripts for Tweaking / Fixing Windows 10
 * [ install mozilla firefox ]
 * cleanup/rem-msedge.ps1
 * cleanup/rem-sysapps.ps1
+* power/set_power.cmd
 
 ## Specific Information
 
@@ -151,6 +152,14 @@ Some apps however cannot be removed using this script as they are considered sys
                     Microsoft.XboxGameCallableUI
                     Microsoft.XboxIdentityProvider
                     Windows.ContactSupport
+
+## power/
+
+### set_power.cmd
+
+Sets windows power options for windows (used for desktop systems).
+
+Disables timeouts for monitors, disks, standby and hibernate.
 
 ## cleanup/
 

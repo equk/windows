@@ -119,3 +119,7 @@ If (-Not (Test-Path "HKLM:\Software\Policies\Microsoft\Windows\System"))
     New-Item -Path "HKLM:\Software\Policies\Microsoft\Windows" -Name "System"
 }
 sp "HKLM:\Software\Policies\Microsoft\Windows\System" -Name "EnableSmartScreen" 0
+
+# Disable Microsoft Remote Assistance
+Write-Host ">> Disabling Microsoft Remote Assistance"
+sp "HKLM:\SYSTEM\CurrentControlSet\Control\Remote Assistance" -Name "fAllowToGetHelp" 0

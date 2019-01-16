@@ -2,11 +2,28 @@
 
 This repo holds tweaks for Windows
 
-The main activity is in the windows_10 folder
+The main activity is in the :sparkles: windows_10 :sparkles: folder
 
-## Windows_10
+## :sparkles: Windows_10 :sparkles:
 
 Lots of scripts to tweak Microsoft Windows 10
+
+- [x] Disable Telemetry
+- [x] Disable Problem Steps Recorder
+- [x] Disable Application Impact Telemetry
+- [x] Disable Customer Experience Improvement Program
+- [x] Disable Unwanted Scheduled Tasks
+- [x] Disable Unwanted Services
+- [x] Disable SMB1 Protocol
+- [x] Disable Cortana
+- [x] Disable Windows Store Restrictions
+- [x] Set Windows Update Settings Using Group Policy
+- [x] Remove Unwanted Apps
+- [x] Remove Cortana
+- [x] Remove Microsoft OneDrive
+- [x] Remove Microsoft Edge Browser
+- [x] Automate Firewall Rules Using IP Blocklists
+- [x] Automate Hosts Blocking Using DNS Blocklists
 
 ### 1803 / 1809
 
@@ -42,17 +59,6 @@ Scripts feature ability to disable various Microsoft technologies / services whi
 
 Cleanup folder features scripts to remove Microsoft OneDrive & move components relating to indexing of information within files (Cortana), reporting & information gathering.
 
-rem-sysapps should now remove cortana etc multiple times meaning you can re-run the script to remove cortana when windows update re-installs cortana (which it seems to do frequently).
-
-
-Some other useful scripts in the windows 10 folder:
-
-```
-fw-blocklist        Windows Firewall Extension scripts - allows use of IP Blocklists
-hosts-blocklist     HOSTS script to block hosts from blocklists.
-misc-tweaks         Tweak appearance of lockscreen & various other personal usability tweaks
-```
-
 <details><summary>Microsoft References</summary>
 <a href="https://technet.microsoft.com/en-us/itpro/windows/manage/configure-windows-telemetry-in-your-organization">Configure Windows telemetry in your organization</a>
 
@@ -72,3 +78,9 @@ rem_spy_updates         removes Windows 7 & 8 updates which relate to install of
 ```
 
 Most of the scripts here are documented on [my personal blog website](https://equk.co.uk/)
+
+# Contact
+
+Website: https://equk.co.uk
+
+Twitter: [@equilibriumuk](https://twitter.com/equilibriumuk)

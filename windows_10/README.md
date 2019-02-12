@@ -105,6 +105,8 @@ Added new script to remove Microsoft Edge browser as it now seems to run in the 
 
 *Cleanup folder contains scripts which could cause problems with Windows Components as it removes unwanted applications / components.*
 
+*Some updates will re-install Microsoft Edge Browser & Cortana (can be removed again running the scripts after update)*
+
 # Contact
 
 Website: https://equk.co.uk

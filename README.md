@@ -29,8 +29,6 @@ Lots of scripts to tweak Microsoft Windows 10
 
 Scripts still relevant, added new script to remove Microsoft Edge browser as it now seems to run in the background for some reason.
 
-The remove cortana cleanup script sometimes errors as the process doesn't seem to close but works if you run multiple times.
-
 Microsoft also seem to have removed the GPO for disabling cortana in Software Policies.
 
 - 15 Jan 2019 updated README ref: set_power.cmd script

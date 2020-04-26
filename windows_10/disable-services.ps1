@@ -49,7 +49,7 @@ $services = @(
     "OneSyncSvc"                               # Sync Host Service
     "AeLookupSvc"                              # Application Experience Service
     "PcaSvc"                                   # Program Compatibility Assistant
-    "WinHttpAutoProxySvc"                      # WinHTTP Web Proxy Auto-Discovery
+    #"WinHttpAutoProxySvc"                     # WinHTTP Web Proxy Auto-Discovery
     "UPNPHOST"                                 # Universal Plug & Play Host
     "ERSVC"                                    # Error Reporting Service
     "WERSVC"                                   # Windows Error Reporting Service

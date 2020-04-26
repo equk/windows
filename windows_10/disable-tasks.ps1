@@ -36,7 +36,7 @@ Write-Host "  Disabling Scheduled Tasks"
 Write-Host ""
 
 foreach ($task in $tasks) {
-    Get-ScheduledTask -TaskName $task | % { Disable-ScheduledTask -TaskName $_.TaskName -TaskPath $_.TaskPath }
+    Get-ScheduledTask -TaskName "$task" -ErrorAction SilentlyContinue | % { Disable-ScheduledTask -TaskName $_.TaskName -TaskPath $_.TaskPath }
 }
 
 Write-Host ""

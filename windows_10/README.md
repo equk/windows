@@ -89,6 +89,11 @@ Updated Lists:
 
 ## :memo: Notes
 
+#### 1909
+
+- 1909 features new app package `Microsoft.Windows.StartMenuExperienceHost`
+- 1909 new service `autotimesvc        Cellular Time`
+
 #### 1809
 
 Microsoft Edge browser background process re-spawns the cortana searchui process if it gets killed.

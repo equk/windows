@@ -25,12 +25,38 @@ Lots of scripts to tweak Microsoft Windows 10
 - [x] Automate Firewall Rules Using IP Blocklists
 - [x] Automate Hosts Blocking Using DNS Blocklists
 
+### 1909
+
+Tweaked scripts to reduce errors with scheduled tasks & services.
+
+#### 1909 new install changes
+
+- 1909 features new app package `Microsoft.Windows.StartMenuExperienceHost`
+- 1909 new service `autotimesvc        Cellular Time`
+
+1909 New Scheduled Tasks
+
+    \Microsoft\Windows\Work Folders\               Work Folders Logon Synchroniza... Ready
+    \Microsoft\Windows\Work Folders\               Work Folders Maintenance Work     Ready
+    \Microsoft\Windows\Workplace Join\             Automatic-Device-Join             Disabled
+    \Microsoft\Windows\Workplace Join\             Device-Sync                       Disabled
+    \Microsoft\Windows\Workplace Join\             Recovery-Check                    Disabled
+    \Microsoft\Windows\WwanSvc\                    NotificationTask                  Ready
+    \Microsoft\XblGameSave\                        XblGameSaveTask                   Ready
+
 ### 1803 / 1809
 
 Scripts still relevant, added new script to remove Microsoft Edge browser as it now seems to run in the background for some reason.
 
 Microsoft also seem to have removed the GPO for disabling cortana in Software Policies.
 
+- 26 Apr 2020 added list of services for 1909 new install
+- 26 Apr 2020 added list of scheduled tasks for 1909 new install
+- 26 Apr 2020 added list of apps for 1909 new install
+- 26 Apr 2020 added ErrorAction SilentlyContinue to disable-tasks
+- 26 Apr 2020 commented WinHttpAutoProxySvc in disable-services as may be useful
+- 12 Feb 2019 added note about windows updates installing edge & cortana
+- 16 Jan 2019 updated windows 10 telemetry host list ref 1809
 - 15 Jan 2019 updated README ref: set_power.cmd script
 - 15 Jan 2019 added set_power script to disable hibernate & standby options in windows
 - 15 Jan 2019 added registry key to disable microsoft remote assistance to misc-tweaks

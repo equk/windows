@@ -53,6 +53,10 @@ Updated Lists:
     ├── remove-apps.ps1
     ├── set-windowsupdate.ps1
 
+    Download & Install Apps From Powershell
+    ---------------------------------------
+    ├── firefox-inst.ps1
+
     Remove Unwanted Components
     --------------------------
     ├── cleanup
@@ -82,7 +86,7 @@ Updated Lists:
     set-windowsupdate.ps1
     cleanup/rem-onedrive.ps1
     [ reboot ]
-    [ install mozilla firefox ]
+    firefox-inst.ps1
     cleanup/rem-msedge.ps1
     cleanup/rem-sysapps.ps1
     power/set_power.cmd

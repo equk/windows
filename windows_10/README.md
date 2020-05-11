@@ -91,6 +91,10 @@ Updated Lists:
     cleanup/rem-sysapps.ps1
     power/set_power.cmd
 
+### 🖧 net_tweaks
+
+Run `../tweaks/net_tweaks.cmd` to set `TcpAckFrequency` & `TCPNoDelay` on all network adapters
+
 ## :memo: Notes
 
 #### 1909

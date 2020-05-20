@@ -1,4 +1,4 @@
-# :sparkles: Windows_10
+# 🍭 Windows_10
 
 A small collection of scripts for Tweaking / Fixing Windows 10
 
@@ -18,6 +18,7 @@ A small collection of scripts for Tweaking / Fixing Windows 10
 - [x] Remove Cortana
 - [x] Remove Microsoft OneDrive
 - [x] Remove Microsoft Edge Browser
+- [x] Download & Install Firefox Using Powershell
 
 *More detail can be found in comments within scripts*
 

@@ -28,6 +28,14 @@ A collection of scripts for Tweaking / Fixing Windows 10
 - [x] Automate Firewall Rules Using IP Blocklists
 - [x] Automate Hosts Blocking Using DNS Blocklists
 
+### 2004
+
+#### cortana
+
+- now renamed from `Microsoft.Windows.Cortana` to `Microsoft.Windows.Search`
+- location of files now `Windows\SystemApps\Microsoft.Windows.Search_cw5n1h2txyewy`
+- `rem-cortana.ps1` & `rem-sysapps.ps1` updated to fix this
+
 ### 1909
 
 Tweaked scripts to reduce errors with scheduled tasks & services.

@@ -98,6 +98,10 @@ Run `../tweaks/net_tweaks.cmd` to set `TcpAckFrequency` & `TCPNoDelay` on all ne
 
 ## :memo: Notes
 
+#### 2004
+
+- cortana renamed from `Microsoft.Windows.Cortana` to `Microsoft.Windows.Search`
+
 #### 1909
 
 - 1909 features new app package `Microsoft.Windows.StartMenuExperienceHost`

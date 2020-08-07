@@ -22,10 +22,12 @@
 $sysapppath = "$env:systemroot\SystemApps"
 $sysapps = @(
     "Microsoft.Windows.Cortana_cw5n1h2txyewy"
+    "Microsoft.Windows.Search_cw5n1h2txyewy"
     )
 
 Write-Host ">> Killing Cortana Process"
 Get-Process *SearchUI* | Stop-Process -Force
+Get-Process *SearchApp* | Stop-Process -Force
 Get-Process *RemindersServer* | Stop-Process -Force
 Get-Process *RuntimeBroker* | Stop-Process -Force
 Write-Host ">> Moving Folders"

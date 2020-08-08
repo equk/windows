@@ -30,7 +30,24 @@ A collection of scripts for Tweaking / Fixing Windows 10
 
 ### 2004
 
-#### cortana
+#### Microsoft Defender
+
+- Detects Changes to HOSTS File
+- Potentially Unwanted App (PUA) App Blocking Protection
+
+HOSTS file changes are detected as this is a known vector for malware.
+
+If you make changes yourself you can simply click Allow.
+
+PUA protection has been known to remove some apps people find useful & it can be disabled if it causes problems.
+
+```
+Set-MpPreference -PUAProtection 0
+```
+
+PUA protection may be useful so it's really down to personal preference.
+
+#### Cortana
 
 - now renamed from `Microsoft.Windows.Cortana` to `Microsoft.Windows.Search`
 - location of files now `Windows\SystemApps\Microsoft.Windows.Search_cw5n1h2txyewy`

@@ -100,7 +100,21 @@ Run `../tweaks/net_tweaks.cmd` to set `TcpAckFrequency` & `TCPNoDelay` on all ne
 
 #### 2004
 
+- Windows Defender Detects Changes to HOSTS File
+- Windows Defender Potentially Unwanted App (PUA) App Blocking Protection
 - cortana renamed from `Microsoft.Windows.Cortana` to `Microsoft.Windows.Search`
+
+HOSTS file changes are detected as this is a known vector for malware.
+
+If you make changes yourself you can simply click Allow.
+
+PUA protection has been known to remove some apps people find useful & it can be disabled if it causes problems.
+
+```
+Set-MpPreference -PUAProtection 0
+```
+
+PUA protection may be useful so it's really down to personal preference.
 
 #### 1909
 

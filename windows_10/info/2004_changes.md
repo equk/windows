@@ -1,5 +1,10 @@
 # Windows 10 Changes (1909 - 2004)
 
+## microsoft defender
+
+- Detects Changes to HOSTS File
+- Potentially Unwanted App (PUA) App Blocking Protection
+
 ## cortana
 
 - now renamed from `Microsoft.Windows.Cortana` to `Microsoft.Windows.Search`

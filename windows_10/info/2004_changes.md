@@ -12,8 +12,10 @@
 
 ## new services
 
+```
 MixedRealityOpe... Windows Mixed Reality OpenXR Service
 UdkUserSvc_1adcfb  Udk User Service_1adcfb
+```
 
 ## new tasks
 

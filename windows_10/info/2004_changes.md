@@ -1,23 +1,23 @@
-# Windows 10 Changes (1909 - 2004)
+# :suspect: Windows 10 Changes (1909 - 2004)
 
-## microsoft defender
+## :lock: microsoft defender
 
 - Detects Changes to HOSTS File
 - Potentially Unwanted App (PUA) App Blocking Protection
 
-## cortana
+## :mag: cortana
 
 - now renamed from `Microsoft.Windows.Cortana` to `Microsoft.Windows.Search`
 - location of files now `Windows\SystemApps\Microsoft.Windows.Search_cw5n1h2txyewy`
 
-## new services
+## :new: new services
 
 ```
 MixedRealityOpe... Windows Mixed Reality OpenXR Service
 UdkUserSvc_1adcfb  Udk User Service_1adcfb
 ```
 
-## new tasks
+## :new: new tasks
 
 ```
 \Microsoft\Windows\Application Experience\     PcaPatchDbTask                    Ready
@@ -37,14 +37,14 @@ UdkUserSvc_1adcfb  Udk User Service_1adcfb
 \Microsoft\Windows\WwanSvc\                    OobeDiscovery                     Ready
 ```
 
-## removed tasks
+## :x: removed tasks
 
 ```
 \Microsoft\Windows\WindowsUpdate\              sihpostreboot                     Ready
 \Microsoft\Windows\Speech\                     HeadsetButtonPress                Ready
 ```
 
-## new apps
+## :new: new apps
 
 ```
 MicrosoftWindows.Client.CBS
@@ -54,7 +54,7 @@ Microsoft.549981C3F5F10
 Microsoft.Windows.Search
 ```
 
-## removed apps
+## :x: removed apps
 
 ```
 Microsoft.Windows.Cortana

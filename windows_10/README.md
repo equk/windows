@@ -74,23 +74,25 @@ Updated Lists:
 
 ### :bulb: Example Run Order
 
+:loudspeaker: install windows with no network connected
+
 *scripts must be run as administrator*
 
-    enable_scripts.cmd
-    disable-tasks.ps1
-    disable-services.ps1
-    disable-cortana.ps1
-    disable-telemetry.ps1
-    remove-apps.ps1
-    hosts-blocklist.ps1 telemetry_hosts.txt
-    misc-tweaks.ps1
-    set-windowsupdate.ps1
-    cleanup/rem-onedrive.ps1
-    [ reboot ]
-    firefox-inst.ps1
-    cleanup/rem-msedge.ps1
-    cleanup/rem-sysapps.ps1
-    power/set_power.cmd
+- [ ] ⚙️ enable_scripts.cmd
+- [ ] ⚙️ disable-tasks.ps1
+- [ ] ⚙️ disable-services.ps1
+- [ ] ⚙️ disable-cortana.ps1
+- [ ] ⚙️ disable-telemetry.ps1
+- [ ] ⚙️ remove-apps.ps1
+- [ ] ⚙️ hosts-blocklist.ps1 telemetry_hosts.txt
+- [ ] ⚙️ misc-tweaks.ps1
+- [ ] ⚙️ set-windowsupdate.ps1
+- [ ] ⚙️ cleanup/rem-onedrive.ps1
+- [ ] :bulb: reboot
+- [ ] ⚙️ firefox-inst.ps1
+- [ ] ⚙️ cleanup/rem-msedge.ps1
+- [ ] ⚙️ cleanup/rem-sysapps.ps1
+- [ ] ⚙️ power/set_power.cmd
 
 ### 🖧 net_tweaks
 

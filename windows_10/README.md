@@ -34,49 +34,47 @@ Updated Lists:
 
 ## :page_facing_up: Scripts
 
-    General Disable Scripts
-    -----------------------
-    ├── disable-cortana.ps1
-    ├── disable-optional.ps1
-    ├── disable-services.ps1
-    ├── disable-tasks.ps1
-    ├── disable-telemetry.ps1
+#### General Disable Scripts
 
-    Firewall Rule Automation Scripts
-    --------------------------------
-    ├── fw-blocklist.ps1
-    ├── fw-block.ps1
-    ├── hosts-blocklist.ps1
+- disable-cortana.ps1
+- disable-optional.ps1
+- disable-services.ps1
+- disable-tasks.ps1
+- disable-telemetry.ps1
 
-    Personal Optional Settings
-    --------------------------
-    ├── misc-tweaks.ps1
-    ├── remove-apps.ps1
-    ├── set-windowsupdate.ps1
+#### Firewall Rule Automation Scripts
 
-    Download & Install Apps From Powershell
-    ---------------------------------------
-    ├── firefox-inst.ps1
+- fw-blocklist.ps1
+- fw-block.ps1
+- hosts-blocklist.ps1
 
-    Remove Unwanted Components
-    --------------------------
-    ├── cleanup
-    │   ├── rem-cortana.ps1
-    │   ├── rem-msedge.ps1
-    │   ├── rem-onedrive.ps1
-    │   ├── rem-people.ps1
-    │   ├── rem-sysapps.ps1
+#### Personal Optional Settings
 
-    Set Power Options
-    -----------------
-    ├── power
-    └── └── set_power.cmd
+- misc-tweaks.ps1
+- remove-apps.ps1
+- set-windowsupdate.ps1
+
+#### Download & Install Apps From Powershell
+
+- firefox-inst.ps1
+
+#### Remove Unwanted Components
+
+- cleanup/rem-cortana.ps1
+- cleanup/rem-msedge.ps1
+- cleanup/rem-onedrive.ps1
+- cleanup/rem-people.ps1
+- cleanup/rem-sysapps.ps1
+
+#### Set Power Options
+
+- power/set_power.cmd
 
 ### :bulb: Example Run Order
 
 :loudspeaker: install windows with no network connected
 
-*scripts must be run as administrator*
+:warning: *scripts must be run as administrator*
 
 - [ ] ⚙️ enable_scripts.cmd
 - [ ] ⚙️ disable-tasks.ps1

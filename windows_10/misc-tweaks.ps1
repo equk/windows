@@ -123,3 +123,7 @@ sp "HKLM:\Software\Policies\Microsoft\Windows\System" -Name "EnableSmartScreen" 
 # Disable Microsoft Remote Assistance
 Write-Host ">> Disabling Microsoft Remote Assistance"
 sp "HKLM:\SYSTEM\CurrentControlSet\Control\Remote Assistance" -Name "fAllowToGetHelp" 0
+
+# Disable Meet Now in Taskbar
+Write-Host ">> Disabling Meet Now Feature"
+sp "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer" "HideSCAMeetNow" 1

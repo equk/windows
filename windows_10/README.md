@@ -126,13 +126,15 @@ Edge is now based on Google Blink browser engine & seems improved.
 
 ##### New Services
 
-- DmEnrollmentSvc    Device Management Enrollment Service
-- Fax                Fax
-- fdPHost            Function Discovery Provider Host
-- p2pimsvc           Peer Networking Identity Manager
-- p2psvc             Peer Networking Grouping
-- ssh-agent          OpenSSH Authentication Agent
-- vmickvpexchange    Hyper-V Data Exchange Service
+```ps
+DmEnrollmentSvc    Device Management Enrollment Service
+Fax                Fax
+fdPHost            Function Discovery Provider Host
+p2pimsvc           Peer Networking Identity Manager
+p2psvc             Peer Networking Grouping
+ssh-agent          OpenSSH Authentication Agent
+vmickvpexchange    Hyper-V Data Exchange Service
+```
 
 ##### Script Changes
 

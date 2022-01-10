@@ -1,0 +1,196 @@
+TaskPath                                       TaskName                          State
+--------                                       --------                          -----
+\                                              MicrosoftEdgeUpdateTaskMachine... Running
+\                                              MicrosoftEdgeUpdateTaskMachineUA  Running
+\                                              OneDrive Standalone Update Tas... Running
+\Microsoft\Windows\.NET Framework\             .NET Framework NGEN v4.0.30319    Ready
+\Microsoft\Windows\.NET Framework\             .NET Framework NGEN v4.0.30319 64 Ready
+\Microsoft\Windows\.NET Framework\             .NET Framework NGEN v4.0.30319... Disabled
+\Microsoft\Windows\.NET Framework\             .NET Framework NGEN v4.0.30319... Disabled
+\Microsoft\Windows\Active Directory Rights ... AD RMS Rights Policy Template ... Disabled
+\Microsoft\Windows\Active Directory Rights ... AD RMS Rights Policy Template ... Ready
+\Microsoft\Windows\AppID\                      EDP Policy Manager                Ready
+\Microsoft\Windows\AppID\                      PolicyConverter                   Disabled
+\Microsoft\Windows\AppID\                      VerifiedPublisherCertStoreCheck   Disabled
+\Microsoft\Windows\Application Experience\     Microsoft Compatibility Appraiser Running
+\Microsoft\Windows\Application Experience\     PcaPatchDbTask                    Running
+\Microsoft\Windows\Application Experience\     ProgramDataUpdater                Ready
+\Microsoft\Windows\Application Experience\     StartupAppTask                    Ready
+\Microsoft\Windows\ApplicationData\            appuriverifierdaily               Ready
+\Microsoft\Windows\ApplicationData\            appuriverifierinstall             Ready
+\Microsoft\Windows\ApplicationData\            CleanupTemporaryState             Ready
+\Microsoft\Windows\ApplicationData\            DsSvcCleanup                      Ready
+\Microsoft\Windows\AppxDeploymentClient\       Pre-staged app cleanup            Disabled
+\Microsoft\Windows\Autochk\                    Proxy                             Ready
+\Microsoft\Windows\BitLocker\                  BitLocker Encrypt All Drives      Ready
+\Microsoft\Windows\BitLocker\                  BitLocker MDM policy Refresh      Ready
+\Microsoft\Windows\Bluetooth\                  UninstallDeviceTask               Ready
+\Microsoft\Windows\BrokerInfrastructure\       BgTaskRegistrationMaintenanceTask Ready
+\Microsoft\Windows\CertificateServicesClient\  AikCertEnrollTask                 Ready
+\Microsoft\Windows\CertificateServicesClient\  CryptoPolicyTask                  Ready
+\Microsoft\Windows\CertificateServicesClient\  KeyPreGenTask                     Ready
+\Microsoft\Windows\CertificateServicesClient\  SystemTask                        Ready
+\Microsoft\Windows\CertificateServicesClient\  UserTask                          Ready
+\Microsoft\Windows\CertificateServicesClient\  UserTask-Roam                     Ready
+\Microsoft\Windows\Chkdsk\                     ProactiveScan                     Ready
+\Microsoft\Windows\Chkdsk\                     SyspartRepair                     Ready
+\Microsoft\Windows\Clip\                       License Validation                Disabled
+\Microsoft\Windows\CloudExperienceHost\        CreateObjectTask                  Ready
+\Microsoft\Windows\Customer Experience Impr... Consolidator                      Ready
+\Microsoft\Windows\Customer Experience Impr... UsbCeip                           Ready
+\Microsoft\Windows\Data Integrity Scan\        Data Integrity Check And Scan     Ready
+\Microsoft\Windows\Data Integrity Scan\        Data Integrity Scan               Ready
+\Microsoft\Windows\Data Integrity Scan\        Data Integrity Scan for Crash ... Ready
+\Microsoft\Windows\Defrag\                     ScheduledDefrag                   Ready
+\Microsoft\Windows\Device Information\         Device                            Running
+\Microsoft\Windows\Device Information\         Device User                       Ready
+\Microsoft\Windows\Device Setup\               Metadata Refresh                  Ready
+\Microsoft\Windows\DeviceDirectoryClient\      HandleCommand                     Ready
+\Microsoft\Windows\DeviceDirectoryClient\      HandleWnsCommand                  Ready
+\Microsoft\Windows\DeviceDirectoryClient\      IntegrityCheck                    Ready
+\Microsoft\Windows\DeviceDirectoryClient\      LocateCommandUserSession          Ready
+\Microsoft\Windows\DeviceDirectoryClient\      RegisterDeviceAccountChange       Ready
+\Microsoft\Windows\DeviceDirectoryClient\      RegisterDeviceLocationRightsCh... Disabled
+\Microsoft\Windows\DeviceDirectoryClient\      RegisterDevicePeriodic24          Disabled
+\Microsoft\Windows\DeviceDirectoryClient\      RegisterDevicePolicyChange        Ready
+\Microsoft\Windows\DeviceDirectoryClient\      RegisterDeviceProtectionStateC... Ready
+\Microsoft\Windows\DeviceDirectoryClient\      RegisterDeviceSettingChange       Ready
+\Microsoft\Windows\DeviceDirectoryClient\      RegisterUserDevice                Ready
+\Microsoft\Windows\Diagnosis\                  RecommendedTroubleshootingScanner Ready
+\Microsoft\Windows\Diagnosis\                  Scheduled                         Ready
+\Microsoft\Windows\DirectX\                    DirectXDatabaseUpdater            Ready
+\Microsoft\Windows\DirectX\                    DXGIAdapterCache                  Ready
+\Microsoft\Windows\DiskCleanup\                SilentCleanup                     Ready
+\Microsoft\Windows\DiskDiagnostic\             Microsoft-Windows-DiskDiagnost... Ready
+\Microsoft\Windows\DiskDiagnostic\             Microsoft-Windows-DiskDiagnost... Disabled
+\Microsoft\Windows\DiskFootprint\              Diagnostics                       Ready
+\Microsoft\Windows\DiskFootprint\              StorageSense                      Ready
+\Microsoft\Windows\DUSM\                       dusmtask                          Ready
+\Microsoft\Windows\EDP\                        EDP App Launch Task               Ready
+\Microsoft\Windows\EDP\                        EDP Auth Task                     Ready
+\Microsoft\Windows\EDP\                        EDP Inaccessible Credentials Task Ready
+\Microsoft\Windows\EDP\                        StorageCardEncryption Task        Ready
+\Microsoft\Windows\ExploitGuard\               ExploitGuard MDM policy Refresh   Ready
+\Microsoft\Windows\Feedback\Siuf\              DmClient                          Ready
+\Microsoft\Windows\Feedback\Siuf\              DmClientOnScenarioDownload        Ready
+\Microsoft\Windows\File Classification Infr... Property Definition Sync          Disabled
+\Microsoft\Windows\FileHistory\                File History (maintenance mode)   Ready
+\Microsoft\Windows\Flighting\FeatureConfig\    ReconcileFeatures                 Running
+\Microsoft\Windows\Flighting\FeatureConfig\    UsageDataFlushing                 Ready
+\Microsoft\Windows\Flighting\FeatureConfig\    UsageDataReporting                Ready
+\Microsoft\Windows\Flighting\OneSettings\      RefreshCache                      Running
+\Microsoft\Windows\HelloFace\                  FODCleanupTask                    Ready
+\Microsoft\Windows\Input\                      LocalUserSyncDataAvailable        Ready
+\Microsoft\Windows\Input\                      MouseSyncDataAvailable            Ready
+\Microsoft\Windows\Input\                      PenSyncDataAvailable              Ready
+\Microsoft\Windows\Input\                      TouchpadSyncDataAvailable         Ready
+\Microsoft\Windows\InstallService\             ScanForUpdates                    Running
+\Microsoft\Windows\InstallService\             ScanForUpdatesAsUser              Ready
+\Microsoft\Windows\InstallService\             SmartRetry                        Ready
+\Microsoft\Windows\InstallService\             WakeUpAndContinueUpdates          Disabled
+\Microsoft\Windows\InstallService\             WakeUpAndScanForUpdates           Disabled
+\Microsoft\Windows\International\              Synchronize Language Settings     Ready
+\Microsoft\Windows\LanguageComponentsInstal... Installation                      Ready
+\Microsoft\Windows\LanguageComponentsInstal... ReconcileLanguageResources        Ready
+\Microsoft\Windows\LanguageComponentsInstal... Uninstallation                    Ready
+\Microsoft\Windows\License Manager\            TempSignedLicenseExchange         Ready
+\Microsoft\Windows\Location\                   Notifications                     Ready
+\Microsoft\Windows\Location\                   WindowsActionDialog               Ready
+\Microsoft\Windows\Maintenance\                WinSAT                            Ready
+\Microsoft\Windows\Management\Provisioning\    Cellular                          Ready
+\Microsoft\Windows\Management\Provisioning\    Logon                             Ready
+\Microsoft\Windows\Management\Provisioning\    Retry                             Disabled
+\Microsoft\Windows\Management\Provisioning\    RunOnReboot                       Disabled
+\Microsoft\Windows\Maps\                       MapsToastTask                     Ready
+\Microsoft\Windows\Maps\                       MapsUpdateTask                    Disabled
+\Microsoft\Windows\MemoryDiagnostic\           ProcessMemoryDiagnosticEvents     Ready
+\Microsoft\Windows\MemoryDiagnostic\           RunFullMemoryDiagnostic           Ready
+\Microsoft\Windows\Mobile Broadband Accounts\  MNO Metadata Parser               Ready
+\Microsoft\Windows\MUI\                        LPRemove                          Ready
+\Microsoft\Windows\Multimedia\                 SystemSoundsService               Running
+\Microsoft\Windows\NetTrace\                   GatherNetworkInfo                 Ready
+\Microsoft\Windows\NlaSvc\                     WiFiTask                          Ready
+\Microsoft\Windows\Offline Files\              Background Synchronization        Disabled
+\Microsoft\Windows\Offline Files\              Logon Synchronization             Disabled
+\Microsoft\Windows\PI\                         Secure-Boot-Update                Ready
+\Microsoft\Windows\PI\                         Sqm-Tasks                         Ready
+\Microsoft\Windows\Plug and Play\              Device Install Group Policy       Ready
+\Microsoft\Windows\Plug and Play\              Device Install Reboot Required    Ready
+\Microsoft\Windows\Plug and Play\              Sysprep Generalize Drivers        Ready
+\Microsoft\Windows\Power Efficiency Diagnos... AnalyzeSystem                     Ready
+\Microsoft\Windows\Printing\                   EduPrintProv                      Ready
+\Microsoft\Windows\PushToInstall\              LoginCheck                        Disabled
+\Microsoft\Windows\PushToInstall\              Registration                      Running
+\Microsoft\Windows\Ras\                        MobilityManager                   Ready
+\Microsoft\Windows\RecoveryEnvironment\        VerifyWinRE                       Ready
+\Microsoft\Windows\Registry\                   RegIdleBackup                     Ready
+\Microsoft\Windows\RemoteAssistance\           RemoteAssistanceTask              Ready
+\Microsoft\Windows\RetailDemo\                 CleanupOfflineContent             Ready
+\Microsoft\Windows\Servicing\                  StartComponentCleanup             Ready
+\Microsoft\Windows\SettingSync\                BackgroundUploadTask              Ready
+\Microsoft\Windows\SettingSync\                NetworkStateChangeTask            Ready
+\Microsoft\Windows\SharedPC\                   Account Cleanup                   Disabled
+\Microsoft\Windows\Shell\                      CreateObjectTask                  Ready
+\Microsoft\Windows\Shell\                      FamilySafetyMonitor               Ready
+\Microsoft\Windows\Shell\                      FamilySafetyRefreshTask           Ready
+\Microsoft\Windows\Shell\                      IndexerAutomaticMaintenance       Ready
+\Microsoft\Windows\Shell\                      UpdateUserPictureTask             Ready
+\Microsoft\Windows\SoftwareProtectionPlatform\ SvcRestartTask                    Ready
+\Microsoft\Windows\SoftwareProtectionPlatform\ SvcRestartTaskLogon               Ready
+\Microsoft\Windows\SoftwareProtectionPlatform\ SvcRestartTaskNetwork             Ready
+\Microsoft\Windows\SpacePort\                  SpaceAgentTask                    Ready
+\Microsoft\Windows\SpacePort\                  SpaceManagerTask                  Ready
+\Microsoft\Windows\Speech\                     SpeechModelDownloadTask           Ready
+\Microsoft\Windows\StateRepository\            MaintenanceTasks                  Ready
+\Microsoft\Windows\Storage Tiers Management\   Storage Tiers Management Initi... Ready
+\Microsoft\Windows\Storage Tiers Management\   Storage Tiers Optimization        Disabled
+\Microsoft\Windows\Subscription\               EnableLicenseAcquisition          Ready
+\Microsoft\Windows\Subscription\               LicenseAcquisition                Disabled
+\Microsoft\Windows\Sysmain\                    HybridDriveCachePrepopulate       Disabled
+\Microsoft\Windows\Sysmain\                    HybridDriveCacheRebalance         Disabled
+\Microsoft\Windows\Sysmain\                    ResPriStaticDbSync                Ready
+\Microsoft\Windows\Sysmain\                    WsSwapAssessmentTask              Ready
+\Microsoft\Windows\SystemRestore\              SR                                Ready
+\Microsoft\Windows\Task Manager\               Interactive                       Ready
+\Microsoft\Windows\TextServicesFramework\      MsCtfMonitor                      Ready
+\Microsoft\Windows\Time Synchronization\       ForceSynchronizeTime              Ready
+\Microsoft\Windows\Time Synchronization\       SynchronizeTime                   Ready
+\Microsoft\Windows\Time Zone\                  SynchronizeTimeZone               Ready
+\Microsoft\Windows\TPM\                        Tpm-HASCertRetr                   Ready
+\Microsoft\Windows\TPM\                        Tpm-Maintenance                   Ready
+\Microsoft\Windows\UNP\                        RunUpdateNotificationMgr          Disabled
+\Microsoft\Windows\UpdateOrchestrator\         Report policies                   Ready
+\Microsoft\Windows\UpdateOrchestrator\         Schedule Maintenance Work         Disabled
+\Microsoft\Windows\UpdateOrchestrator\         Schedule Scan                     Ready
+\Microsoft\Windows\UpdateOrchestrator\         Schedule Scan Static Task         Ready
+\Microsoft\Windows\UpdateOrchestrator\         Schedule Wake To Work             Disabled
+\Microsoft\Windows\UpdateOrchestrator\         Schedule Work                     Disabled
+\Microsoft\Windows\UpdateOrchestrator\         UpdateModelTask                   Ready
+\Microsoft\Windows\UpdateOrchestrator\         USO_UxBroker                      Running
+\Microsoft\Windows\UPnP\                       UPnPHostConfig                    Ready
+\Microsoft\Windows\USB\                        Usb-Notifications                 Ready
+\Microsoft\Windows\User Profile Service\       HiveUploadTask                    Disabled
+\Microsoft\Windows\WaaSMedic\                  PerformRemediation                Disabled
+\Microsoft\Windows\WCM\                        WiFiTask                          Ready
+\Microsoft\Windows\WDI\                        ResolutionHost                    Ready
+\Microsoft\Windows\Windows Defender\           Windows Defender Cache Mainten... Ready
+\Microsoft\Windows\Windows Defender\           Windows Defender Cleanup          Ready
+\Microsoft\Windows\Windows Defender\           Windows Defender Scheduled Scan   Ready
+\Microsoft\Windows\Windows Defender\           Windows Defender Verification     Ready
+\Microsoft\Windows\Windows Error Reporting\    QueueReporting                    Running
+\Microsoft\Windows\Windows Filtering Platform\ BfeOnServiceStartTypeChange       Ready
+\Microsoft\Windows\Windows Media Sharing\      UpdateLibrary                     Ready
+\Microsoft\Windows\WindowsColorSystem\         Calibration Loader                Ready
+\Microsoft\Windows\WindowsUpdate\              Scheduled Start                   Ready
+\Microsoft\Windows\Wininet\                    CacheTask                         Running
+\Microsoft\Windows\WlanSvc\                    CDSSync                           Ready
+\Microsoft\Windows\WOF\                        WIM-Hash-Management               Ready
+\Microsoft\Windows\WOF\                        WIM-Hash-Validation               Ready
+\Microsoft\Windows\Work Folders\               Work Folders Logon Synchroniza... Ready
+\Microsoft\Windows\Work Folders\               Work Folders Maintenance Work     Ready
+\Microsoft\Windows\Workplace Join\             Automatic-Device-Join             Disabled
+\Microsoft\Windows\Workplace Join\             Device-Sync                       Disabled
+\Microsoft\Windows\Workplace Join\             Recovery-Check                    Disabled
+\Microsoft\Windows\WwanSvc\                    NotificationTask                  Ready
+\Microsoft\Windows\WwanSvc\                    OobeDiscovery                     Ready
+\Microsoft\XblGameSave\                        XblGameSaveTask                   Ready

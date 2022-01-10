@@ -115,3 +115,7 @@ sp "HKLM:\SYSTEM\CurrentControlSet\Control\Remote Assistance" -Name "fAllowToGet
 # Disable Meet Now in Taskbar
 Write-Host ">> Disabling Meet Now Feature"
 sp "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer" "HideSCAMeetNow" 1
+
+# Disable News & Interests in Taskbar
+Write-Host ">> Disabling News & Interests in Taskbar"
+sp "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Feeds" -Name "ShellFeedsTaskbarViewMode" 2

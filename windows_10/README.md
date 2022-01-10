@@ -66,6 +66,8 @@ Updated Lists:
 - cleanup/rem-people.ps1
 - cleanup/rem-sysapps.ps1
 
+(apps now have uninstall options with 21h2)
+
 #### Set Power Options
 
 - power/set_power.cmd
@@ -109,6 +111,8 @@ eg:
 - Microsoft OneDrive
 - Microsoft Cortana
 
+others:
+
 - Windows Hello Face
 - Windows Media Player
 - Windows Fax & Scan
@@ -129,6 +133,10 @@ Edge is now based on Google Blink browser engine & seems improved.
 - p2psvc             Peer Networking Grouping
 - ssh-agent          OpenSSH Authentication Agent
 - vmickvpexchange    Hyper-V Data Exchange Service
+
+##### Script Changes
+
+`misc-tweaks` now disables Meet Now in the taskbar
 
 #### 2004
 

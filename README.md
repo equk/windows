@@ -28,6 +28,13 @@ A collection of scripts for Tweaking / Fixing Windows 10
 - [x] Automate Firewall Rules Using IP Blocklists
 - [x] Automate Hosts Blocking Using DNS Blocklists
 
+### 21H2
+
+- System Apps now have uninstall options
+- Includes stable Microsoft Edge
+- Windows Hello Face
+- Windows Meet Now
+
 ### 2004
 
 #### Microsoft Defender

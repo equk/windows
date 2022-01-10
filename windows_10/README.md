@@ -98,6 +98,38 @@ Run `../tweaks/net_tweaks.cmd` to set `TcpAckFrequency` & `TCPNoDelay` on all ne
 
 ## :memo: Notes
 
+#### 21H2
+
+Many system apps in removal scripts now have uninstall options in add/remove programs.
+
+Some can be found in the optional features section.
+
+eg:
+
+- Microsoft OneDrive
+- Microsoft Cortana
+
+- Windows Hello Face
+- Windows Media Player
+- Windows Fax & Scan
+- Microsoft Weather
+- Microsoft Maps
+- Skype
+
+Microsoft Edge is also in the list but is required for other apps using Edge WebView.
+
+Edge is now based on Google Blink browser engine & seems improved.
+
+##### New Services
+
+- DmEnrollmentSvc    Device Management Enrollment Service
+- Fax                Fax
+- fdPHost            Function Discovery Provider Host
+- p2pimsvc           Peer Networking Identity Manager
+- p2psvc             Peer Networking Grouping
+- ssh-agent          OpenSSH Authentication Agent
+- vmickvpexchange    Hyper-V Data Exchange Service
+
 #### 2004
 
 - Windows Defender Detects Changes to HOSTS File

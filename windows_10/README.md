@@ -36,8 +36,6 @@ Updated Lists:
 
 #### General Disable Scripts
 
-- disable-cortana.ps1
-- disable-optional.ps1
 - disable-services.ps1
 - disable-tasks.ps1
 - disable-telemetry.ps1
@@ -54,19 +52,9 @@ Updated Lists:
 - remove-apps.ps1
 - set-windowsupdate.ps1
 
-#### Download & Install Apps From Powershell
+#### Download & Install Firefox From Powershell
 
 - firefox-inst.ps1
-
-#### Remove Unwanted Components
-
-- cleanup/rem-cortana.ps1
-- cleanup/rem-msedge.ps1
-- cleanup/rem-onedrive.ps1
-- cleanup/rem-people.ps1
-- cleanup/rem-sysapps.ps1
-
-(apps now have uninstall options with 21h2)
 
 #### Set Power Options
 
@@ -81,17 +69,8 @@ Updated Lists:
 - [ ] ⚙️ enable_scripts.cmd
 - [ ] ⚙️ disable-tasks.ps1
 - [ ] ⚙️ disable-services.ps1
-- [ ] ⚙️ disable-cortana.ps1
 - [ ] ⚙️ disable-telemetry.ps1
-- [ ] ⚙️ remove-apps.ps1
-- [ ] ⚙️ hosts-blocklist.ps1 telemetry_hosts.txt
 - [ ] ⚙️ misc-tweaks.ps1
-- [ ] ⚙️ set-windowsupdate.ps1
-- [ ] ⚙️ cleanup/rem-onedrive.ps1
-- [ ] :bulb: reboot
-- [ ] ⚙️ firefox-inst.ps1
-- [ ] ⚙️ cleanup/rem-msedge.ps1
-- [ ] ⚙️ cleanup/rem-sysapps.ps1
 - [ ] ⚙️ power/set_power.cmd
 
 ### 🖧 net_tweaks
@@ -176,6 +155,16 @@ Added new script to remove Microsoft Edge browser as it now seems to run in the 
 *Microsoft seem to have removed the GPO for disabling cortana in Software Policies.*
 
 #### :warning: Cleanup
+
+#### Remove Unwanted Components
+
+- cleanup/rem-cortana.ps1
+- cleanup/rem-msedge.ps1
+- cleanup/rem-onedrive.ps1
+- cleanup/rem-people.ps1
+- cleanup/rem-sysapps.ps1
+
+(apps now have uninstall options with 21h2)
 
 *Cleanup folder contains scripts which could cause problems with Windows Components as it removes unwanted applications / components.*
 

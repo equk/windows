@@ -17,10 +17,10 @@ A collection of scripts for Tweaking / Fixing Windows 10
 - [x] Disable Unwanted Scheduled Tasks
 - [x] Disable Unwanted Services
 - [x] Disable SMB1 Protocol
-- [x] Disable Cortana
 - [x] Disable Windows Store Restrictions
 - [x] Set Windows Update Settings Using Group Policy
 - [x] Remove Unwanted Apps
+- [x] Remove Sponsored Apps (eg: spotify, facebook, disney+)
 - [x] Remove Cortana
 - [x] Remove Microsoft OneDrive
 - [x] Remove Microsoft Edge Browser
@@ -34,6 +34,8 @@ A collection of scripts for Tweaking / Fixing Windows 10
 - Includes stable Microsoft Edge
 - Windows Hello Face
 - Windows Meet Now
+
+21H2 apps added to cleanup-windows script
 
 ### 2004
 

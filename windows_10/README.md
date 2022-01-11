@@ -2,6 +2,10 @@
 
 A small collection of scripts for Tweaking / Fixing Windows 10
 
+*I also have a gaming specific repo for windows 10 tweaks*
+
+[🎮 equk/w10_gaming](https://github.com/equk/w10_gaming)
+
 ## :white_check_mark: Features
 
 - [x] Disable Telemetry
@@ -15,9 +19,7 @@ A small collection of scripts for Tweaking / Fixing Windows 10
 - [x] Disable Windows Store Restrictions
 - [x] Set Windows Update Settings Using Group Policy
 - [x] Remove Unwanted Apps
-- [x] Remove Cortana
-- [x] Remove Microsoft OneDrive
-- [x] Remove Microsoft Edge Browser
+- [x] Remove Sponsored Apps (eg: spotify, facebook, disney+)
 - [x] Download & Install Firefox Using Powershell
 
 *More detail can be found in comments within scripts*
@@ -33,6 +35,10 @@ Updated Lists:
 - [Pi-hole Blocklist Collection](https://firebog.net/)
 
 ## :page_facing_up: Scripts
+
+#### Cleanup Script
+
+- windows-cleanup.ps1
 
 #### General Disable Scripts
 
@@ -71,6 +77,7 @@ Updated Lists:
 - [ ] ⚙️ disable-services.ps1
 - [ ] ⚙️ disable-telemetry.ps1
 - [ ] ⚙️ misc-tweaks.ps1
+- [ ] ⚙️ windows-cleanup.ps1
 - [ ] ⚙️ power/set_power.cmd
 
 ### 🖧 net_tweaks

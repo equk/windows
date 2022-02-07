@@ -50,11 +50,6 @@ $sponsors = @(
     "Wunderlist"
 )
 
-$features = @(
-    "SMB1Protocol"
-    "WindowsMediaPlayer"
-)
-
 $optionals = @(
     "App.StepsRecorder"
     "Hello.Face.18967"
@@ -65,12 +60,6 @@ $optionals = @(
 )
 
 Write-Host ">> Starting Windows 10 Cleanup Script"
-
-Write-Host "    ++ Disabling Windows Features"
-foreach ($feature in $features) {
-    Write-Host "      + Disabling Optional Feature $feature ..."
-    Disable-WindowsOptionalFeature -Online -FeatureName $feature -NoRestart -ErrorAction SilentlyContinue | Out-Null
-}
 
 Write-Host "    ++ Removing Windows App Packages"
 foreach ($package in $packages) {

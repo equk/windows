@@ -21,6 +21,7 @@ A small collection of scripts for Tweaking / Fixing Windows 10
 - [x] Remove Unwanted Apps
 - [x] Remove Sponsored Apps (eg: spotify, facebook, disney+)
 - [x] Download & Install Firefox Using Powershell
+- [x] Remove Copilot AI Packages
 
 *More detail can be found in comments within scripts*
 

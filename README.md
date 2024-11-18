@@ -27,6 +27,7 @@ A collection of scripts for Tweaking / Fixing Windows 10
 - [x] Download & Install Firefox Using Powershell
 - [x] Automate Firewall Rules Using IP Blocklists
 - [x] Automate Hosts Blocking Using DNS Blocklists
+- [x] Remove Copilot AI Packages
 
 ### 21H2
 

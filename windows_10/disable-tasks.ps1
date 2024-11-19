@@ -8,7 +8,7 @@
     Script to Disable Specific Scheduled Tasks in Windows
     Made With Privacy In Mind But Can Be Adapted / Tweaked Accordingly
     Requires Admin Access
-    Twitter: @equilibriumuk 
+    Mastodon: https://hachyderm.io/@equilibriumuk
 .NOTES
     File Name      : disable-tasks.ps1
     Author         : @equilibriumuk
@@ -29,6 +29,13 @@ $tasks = @(
     "Microsoft-Windows-DiskDiagnosticDataCollector"
     "Microsoft-Windows-DiskDiagnosticResolver"
     "Sqm-Tasks"
+    "DmClient"                                  # User Feedback
+    "DmClientOnScenarioDownload"                # User Feedback
+    "QueueReporting"                            # User Application Experience
+    "MareBackup"                                # User Application Experience
+    "StartupAppTask"                            # User Application Experience
+    "PcaPatchDbTask"                            # User Application Experience
+    "MapsUpdateTast"                            # Bing Maps
 )
 
 Write-Host ""

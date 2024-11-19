@@ -17,6 +17,9 @@ A small collection of scripts for Tweaking / Fixing Windows 10
 - [x] Disable SMB1 Protocol
 - [x] Disable Cortana
 - [x] Disable Windows Store Restrictions
+- [x] Disable Wifi Sense
+- [x] Disable Windows Timeline
+- [x] Disable User Application Experience Feedback
 - [x] Set Windows Update Settings Using Group Policy
 - [x] Remove Unwanted Apps
 - [x] Remove Sponsored Apps (eg: spotify, facebook, disney+)

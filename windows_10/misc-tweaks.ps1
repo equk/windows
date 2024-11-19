@@ -128,3 +128,13 @@ If (-Not (Test-Path "HKLM:\Software\Microsoft\PolicyManager\default\WiFi"))
 }
 sp "HKLM:\Software\Microsoft\PolicyManager\default\WiFi" -Name "AllowWiFiHotSpotReporting" 0
 sp "HKLM:\Software\Microsoft\PolicyManager\default\WiFi" -Name "AllowAutoConnectToWiFiSenseHotspots" 0
+
+# Disable Windows Timeline
+Write-Host ">> Disabling Windows Timeline"
+If (-Not (Test-Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\System"))
+{
+    New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows" -Name "System"
+}
+sp "HKLM:\SOFTWARE\Policies\Microsoft\Windows\System" -Name "EnableActivityFeed" 0
+sp "HKLM:\SOFTWARE\Policies\Microsoft\Windows\System" -Name "PublishUserActivities" 0
+sp "HKLM:\SOFTWARE\Policies\Microsoft\Windows\System" -Name "UploadUserActivities" 0

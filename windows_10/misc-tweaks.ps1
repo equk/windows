@@ -7,7 +7,7 @@
 .DESCRIPTION
     Misc Personal Tweaks for Windows 10
     Requires Admin Access
-    Twitter: @equilibriumuk
+    Mastodon: https://hachyderm.io/@equilibriumuk
 .NOTES
     File Name      : misc-tweaks.ps1
     Author         : @equilibriumuk
@@ -68,11 +68,11 @@ sp "HKLM:\SYSTEM\CurrentControlSet\Control\TimeZoneInformation" "RealTimeIsUnive
 
 # Disable Windows Consumer Features (Stop annoying game tiles appearing)
 Write-Host ">> Disabling Windows Consumer Features"
-If (-Not (Test-Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\Cloud Content"))
+If (-Not (Test-Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\CloudContent"))
 {
-    New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows" -Name "Cloud Content"
+    New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows" -Name "CloudContent"
 }
-sp "HKLM:\SOFTWARE\Policies\Microsoft\Windows\Cloud Content" "DisableWindowsConsumerFeatures" 1
+sp "HKLM:\SOFTWARE\Policies\Microsoft\Windows\CloudContent" "DisableWindowsConsumerFeatures" 1
 
 # Disable Cortana Searchbar in System Tray
 Write-Host ">> Disabling Cortana Searchbar in System Tray"
@@ -119,3 +119,12 @@ sp "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer" "HideSCAM
 # Disable News & Interests in Taskbar
 Write-Host ">> Disabling News & Interests in Taskbar"
 sp "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Feeds" -Name "ShellFeedsTaskbarViewMode" 2
+
+# Disable Wifi-Sense
+Write-Host ">> Disabling Wifi Sense"
+If (-Not (Test-Path "HKLM:\Software\Microsoft\PolicyManager\default\WiFi"))
+{
+    New-Item -Path "HKLM:\Software\Microsoft\PolicyManager\default" -Name "WiFi"
+}
+sp "HKLM:\Software\Microsoft\PolicyManager\default\WiFi" -Name "AllowWiFiHotSpotReporting" 0
+sp "HKLM:\Software\Microsoft\PolicyManager\default\WiFi" -Name "AllowAutoConnectToWiFiSenseHotspots" 0
